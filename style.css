@@ -21,10 +21,13 @@ body {
 }
 .navigation a {
     text-decoration: none;
-    color: black;
     display: inline-block;
-    margin-left: 4vw;
+    padding: 10px 3vw;
     color: white;
+}
+.navigation a:hover {
+    background-color: white;
+    color: black;
 }
 .container {
     margin: 4vh 3vw;
