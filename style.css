@@ -20,15 +20,20 @@ body {
     background-color: black;
 }
 .navigation a {
+    position: relative;
     text-decoration: none;
     display: inline-block;
     padding: 10px 3vw;
     color: white;
 }
 .navigation a:hover {
+    font-size: large;
+    
     background-color: white;
     color: black;
 }
 .container {
     margin: 4vh 3vw;
 }
+
+
