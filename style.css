@@ -10,9 +10,12 @@ body {height: 4000px;
     background-color: rgb(216, 216, 216);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:center;
 }
+
+.pageTitle
+
 .logo {
     width: 100px;
 }
