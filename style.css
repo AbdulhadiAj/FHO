@@ -1,10 +1,24 @@
 .header {
+    border: black solid 3px;
+    background-color: lightgray;
+}
+.header .header-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: black solid 3px;
-    background-color: lightgray;
+}
+.header .header-top hgroup {
+    margin-left: 3vw;
+}
+.search input:hover {
+    width: 30vw;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 .logo {
     width: 100px;
