@@ -35,14 +35,15 @@ nav{
 
 }
 .p_nav{
+    color: gray;
     border-radius: 10px;
     padding-right: 75px;
     margin: 30px 0 30px ;
 }
 .p_nav:hover{
-    font-size: 20px;
-    padding-right: 50px;
-    margin: 30px 0 30px ;
+    color: white;
+    transform: translateY(-10px);
+
 }
 .container{
     width: auto;
