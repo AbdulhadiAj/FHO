@@ -1,4 +1,39 @@
-
+.header {
+    background-color: orange;
+    border: blue solid 2px;
+}
+/* .header *{
+    border: black solid 1px;
+} */
+.header .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: -35px;
+}
+.header .header-top hgroup {
+    margin-left: 3vw;
+    color: blue;
+}
+.search input:hover {
+    width: 30vw;
+}
+.search input {
+    border-radius: 10px;
+    border: hidden;
+    background-color: rgb(255, 255, 255);
+    width: 20vw;
+    transition: width 0.5s;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 3vw;
+}
 .logo {
     width: 80px;
 }
