@@ -39,11 +39,17 @@
     width: 80px;
 }
 nav{
+    background-image: url(/imgs/Screenshot\ 2023-02-18\ 223613.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 0 -10px ;
     background-color: black;
     display: flex;
     flex-direction: row;
 }
 .p_nav{
+  
+
     color: gray;
     border-radius: 10px;
     padding-right: 20px;
