@@ -2,6 +2,9 @@
     border: black solid 3px;
     background-color: lightgray;
 }
+.header * {
+    border: black solid;
+}
 .header .header-top {
     display: flex;
     flex-direction: row;
@@ -23,7 +26,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 0 20px 10px;
 }
 .logo {
     margin-left:200 ;
@@ -43,10 +45,10 @@ nav{
     border-radius: 10px;
     padding-right: 75px;
     margin: 10px 20px 10px ;
+    transition: transform 0.5s;
 }
 .p_nav:hover{
     color: white;
-    transform: ;
     transform: translate(10px);
 
 }
