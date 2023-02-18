@@ -20,10 +20,14 @@
     width: 30vw;
 }
 .search input {
+    border-radius: 10px;
+    border: hidden;
+    background-color: rgb(255, 255, 255);
     width: 20vw;
     transition: width 0.5s;
 }
 .search {
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
