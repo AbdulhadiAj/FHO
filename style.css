@@ -1,39 +1,4 @@
-.header {
-    border: black solid 3px;
-    background-color: lightgray;
-}
-.header *{
-    border: black solid 1px;
-}
-.header .header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.header .header-top hgroup {
-    margin-left: 3vw;
-}
-.search input:hover {
-    width: 30vw;
-}
-.search input {
-    border-radius: 10px;
-    border: hidden;
-    background-color: rgb(255, 255, 255);
-    width: 20vw;
-    transition: width 0.5s;
-}
-.search {
-    background-color: lightgray;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px 3vw;
-}
+
 .logo {
     width: 80px;
 }
