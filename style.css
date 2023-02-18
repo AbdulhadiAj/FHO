@@ -38,10 +38,11 @@ nav{
 
 }
 .p_nav{
+ 
     color: gray;
     border-radius: 10px;
     padding-right: 75px;
-    margin: 30px 0 30px ;
+    margin: 10px 20px 10px ;
 }
 .p_nav:hover{
     color: white;
