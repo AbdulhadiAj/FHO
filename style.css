@@ -2,11 +2,16 @@
     border: black solid 3px;
     background-color: lightgray;
 }
+.header *{
+    border: black solid 1px;
+}
 .header .header-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .header .header-top hgroup {
     margin-left: 3vw;
@@ -26,8 +31,7 @@
     margin: 10px 3vw;
 }
 .logo {
-    margin-left:200 ;
-    width: 100px;
+    width: 80px;
 }
 nav{
     background-color: black;
