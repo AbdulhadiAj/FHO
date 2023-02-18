@@ -33,8 +33,7 @@ nav{
     background-color: black;
     display: flex;
     flex-direction: row;
-    margin-left: 60px;
-    margin-right: 80px;
+
 
 
 }
@@ -46,7 +45,8 @@ nav{
 }
 .p_nav:hover{
     color: white;
-    transform: translateY(-10px);
+    transform: ;
+    transform: translate(10px);
 
 }
 .container{
