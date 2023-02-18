@@ -2,9 +2,6 @@
     border: black solid 3px;
     background-color: lightgray;
 }
-.header * {
-    border: black solid;
-}
 .header .header-top {
     display: flex;
     flex-direction: row;
@@ -26,6 +23,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: 10px 3vw;
 }
 .logo {
     margin-left:200 ;
