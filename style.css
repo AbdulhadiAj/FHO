@@ -14,6 +14,10 @@
 .search input:hover {
     width: 30vw;
 }
+.search input {
+    width: 20vw;
+    transition: width 0.5s;
+}
 .search {
     display: flex;
     flex-direction: row;
