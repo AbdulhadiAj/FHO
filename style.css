@@ -107,3 +107,6 @@ nav a{
 .card img:hover{
     filter:blur(4px);
 }
+.a-dwonload:hover {
+    transform: scale(1.2);
+}
