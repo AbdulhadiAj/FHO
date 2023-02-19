@@ -82,6 +82,7 @@ nav a{
     text-decoration: none;
 }
 .card{
+    box-shadow: 1px 1px 9px 1px rgb(0, 0, 0);
     border: 2px solid gray;
     background-color: orange;
     border-radius: 10%;
@@ -113,19 +114,28 @@ nav a{
 .card-title {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
+    transition: 0.3 ease-in-out;
 }
 .a-dwonload {
     text-decoration: none;
 }
 .card-sub-title {
+    transition: 0.3 ease-in-out;
     border: white 2px solid;
-    background-color: orange;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     border-radius: 30px;
     padding: 10px;
     visibility: hidden;
+
 }
-.card:hover > .card-sub-title {
+.card:hover >.card-sub-title {
+
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px;
+    visibility: hidden;
     visibility: visible;
     z-index: 1;
+    box-shadow: 3px 3px 20px 2px rgb(255, 255, 255);
 }
