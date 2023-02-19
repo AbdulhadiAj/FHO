@@ -1,5 +1,8 @@
-.header {
-    background-color: orange;
+.header {background-image: url(https://img.freepik.com/free-vector/realistic-gamer-text-effect_23-2149846182.jpg?w=740&t=st=1676825821~exp=1676826421~hmac=f96f8a612479877913d91c19027c199e684608bed81d92c0ee6a9939f202b451);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
     border: blue solid 2px;
 }
 /* .header *{
@@ -36,7 +39,14 @@
     margin: 10px 3vw;
 }
 .logo {
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.356);
     width: 80px;
+}
+.pageTitle{
+    color: white;
+    font-family: ;
 }
 nav{
     background-image: url(/imgs/Screenshot\ 2023-02-18\ 223613.png);
