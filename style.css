@@ -21,7 +21,6 @@
     color: blue;
 }
 .search input:hover {
-
     width: 30vw;
 }
 .search input {
@@ -39,7 +38,6 @@
     margin: 10px 3vw;
 }
 .logo {
-
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.356);
     width: 80px;
@@ -58,8 +56,6 @@ nav{
     flex-direction: row;
 }
 .p_nav{
-  
-
     color: gray;
     border-radius: 10px;
     padding-right: 20px;
@@ -78,9 +74,7 @@ nav{
 }
 nav a{
     padding: top -10px;
-
     text-decoration: none;
-
 }
 .card{
     border: 2px solid gray;
@@ -102,9 +96,12 @@ nav a{
     position: relative;
     width: 17.5rem;
     border-radius: 9%;
+    transition: transform .5s ease-in-out;
 }
 .card img:hover{
     filter:blur(4px);
     transform: scale(1.8);
-    transition: transform 0.5s;
+}
+.card-title {
+    text-decoration: none;
 }
