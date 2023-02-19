@@ -35,7 +35,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 10px 3vw;
+    margin: 10px 1vw;
 }
 .logo {
     border-radius: 50%;
@@ -110,9 +110,7 @@ nav a{
     border-radius: 9%;
     transition: transform .5s ease-in-out;
 }
-.card img:hover{
-    transform:scaleZ(1.4) scaleX() scaleY();
-
+.card:hover > .card-img-top{
     filter:blur(4px);
     transform: scale(1.8);
 }
