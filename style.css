@@ -97,9 +97,14 @@ nav a{
     transition: transform .5s ease-in-out;
 }
 .card:hover > .card-img-top{
+    position: relative;
+    margin-top:30px;
+    width: 18rem;
+    border-radius: 9%;
     filter:blur(4px);
     transform: scale(1.8);
 }
 .card-title {
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
 }
