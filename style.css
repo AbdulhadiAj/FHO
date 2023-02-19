@@ -105,12 +105,17 @@ nav a{
     color: white;
 }
 .card img {
+    margin-top:-30px;
     position: relative;
     width: 18rem;
     border-radius: 9%;
     transition: transform .5s ease-in-out;
 }
 .card:hover > .card-img-top{
+    position: relative;
+    margin-top:30px;
+    width: 18rem;
+    border-radius: 9%;
     filter:blur(4px);
     transform: scale(1.8);
 }
