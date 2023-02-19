@@ -83,10 +83,6 @@ nav a{
 
 }
 .card{
-    background-image: url(https://tech.khyoot.com/wp-content/uploads/2023/02/img-2YmR65gRxgvjrXX_1676303479-300x300.webp);
-    background-repeat: no-repeat;
-    background-size:270px;
-    background-position:10px 30px;
     border: 2px solid gray;
     background-color: orange;
     border-radius: 10%;
@@ -99,10 +95,6 @@ nav a{
     height: 400px;
 }
 .card:hover{
-    background-image: url(https://tech.khyoot.com/wp-content/uploads/2023/02/img-2YmR65gRxgvjrXX_1676303479-300x300.webp);
-    background-repeat: no-repeat;
-    background-size:400px;
-    background-position:-60px 0px;
     border: 2px solid gray;
     background-color: orange;
     border-radius: 10%;
@@ -118,7 +110,7 @@ nav a{
     position: relative;
     color: white;
 }
-/* .card img {
+.card img {
     position: relative;
     width: 17.5rem;
     border-radius: 9%;
@@ -130,6 +122,4 @@ nav a{
     transform: scale(1.8);
     transition: transform 0.5s;
 }
-.a-dwonload:hover {
 
-} */
