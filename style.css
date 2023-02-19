@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 0, 0);
-    border: blue solid 2px;
+    border: rgb(0, 0, 255) solid 2px;
 }
 /* .header *{
     border: black solid 1px;
@@ -44,6 +44,11 @@
 }
 .pageTitle{
     color: white;
+}
+.bi-bi-search{
+    border: 10px  solid rgba(255, 255, 255, 0.034);
+    border-radius: 40%;
+    background-color: rgba(255, 255, 255, 0.356);
 }
 nav{
     background-image: url(/imgs/Screenshot\ 2023-02-18\ 223613.png);
@@ -94,7 +99,7 @@ nav a{
 .card-img-top {
     width: 17.5rem;
     border-radius: 9%;
-    transition: transform .5s ease-in-out;
+    transition: transform .3s ease-in-out;
     margin-top: -20px;
     filter: contrast(100%) brightness(100%);
 
