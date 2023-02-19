@@ -100,7 +100,11 @@ nav a{
     color: white;
 }
 .card img {
+
     position: relative;
     width: 17.5rem;
     border-radius: 9%;
+}
+.card img:hover{
+    filter:blur(4px);
 }
