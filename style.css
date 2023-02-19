@@ -96,12 +96,15 @@ nav a{
     border-radius: 9%;
     transition: transform .5s ease-in-out;
     margin-top: -20px;
+    filter: contrast(100%) brightness(100%);
+
 }
 .card:hover > .card-img-top{
+    filter: contrast(100%) brightness(20%);
     position: relative;
     width: 18rem;
     border-radius: 9%;
-    filter:blur(4px);
+
     transform: scaley(1.8)scaleX(1.6);
 }
 .card-title {
