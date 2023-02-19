@@ -42,7 +42,8 @@ nav{
     background-image: url(/imgs/Screenshot\ 2023-02-18\ 223613.png);
     background-repeat: no-repeat;
     background-size: 100px;
-    background-position: 0 -10px ;
+    background-position-x: right;
+    background-position-y: center;
     background-color: black;
     display: flex;
     flex-direction: row;
