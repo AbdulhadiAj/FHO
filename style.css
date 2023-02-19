@@ -21,6 +21,7 @@
     color: blue;
 }
 .search input:hover {
+
     width: 30vw;
 }
 .search input {
@@ -38,6 +39,7 @@
     margin: 10px 3vw;
 }
 .logo {
+
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.356);
     width: 80px;
@@ -56,6 +58,8 @@ nav{
     flex-direction: row;
 }
 .p_nav{
+  
+
     color: gray;
     border-radius: 10px;
     padding-right: 20px;
@@ -74,9 +78,15 @@ nav{
 }
 nav a{
     padding: top -10px;
+
     text-decoration: none;
+
 }
 .card{
+    background-image: url(https://tech.khyoot.com/wp-content/uploads/2023/02/img-2YmR65gRxgvjrXX_1676303479-300x300.webp);
+    background-repeat: no-repeat;
+    background-size:270px;
+    background-position:10px 30px;
     border: 2px solid gray;
     background-color: orange;
     border-radius: 10%;
@@ -89,6 +99,10 @@ nav a{
     height: 400px;
 }
 .card:hover{
+    background-image: url(https://tech.khyoot.com/wp-content/uploads/2023/02/img-2YmR65gRxgvjrXX_1676303479-300x300.webp);
+    background-repeat: no-repeat;
+    background-size:400px;
+    background-position:px 30px;
     border: 2px solid gray;
     background-color: orange;
     border-radius: 10%;
@@ -104,18 +118,18 @@ nav a{
     position: relative;
     color: white;
 }
-.card img {
+/* .card img {
     position: relative;
     width: 17.5rem;
     border-radius: 9%;
-    transition: transform .5s ease-in-out;
 }
 .card img:hover{
     transform:scaleZ(1.4) scaleX() scaleY();
 
     filter:blur(4px);
     transform: scale(1.8);
+    transition: transform 0.5s;
 }
-.card-title {
-    text-decoration: none;
-}
+.a-dwonload:hover {
+
+} */
