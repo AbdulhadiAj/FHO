@@ -95,16 +95,14 @@ nav a{
     width: 17.5rem;
     border-radius: 9%;
     transition: transform .5s ease-in-out;
-    margin-top: -20px;
+    margin-top: 0px;
     filter: contrast(100%) brightness(100%);
-
 }
 .card:hover > .card-img-top{
     filter: contrast(100%) brightness(20%);
     position: relative;
     width: 18rem;
     border-radius: 9%;
-
     transform: scaley(1.8)scaleX(1.6);
 }
 .card-title {
@@ -116,8 +114,13 @@ nav a{
 }
 .card-sub-title {
     border: white 2px solid;
-    background-color: blue;
-    color: orange;
+    background-color: orange;
+    color: white;
     border-radius: 30px;
     padding: 10px;
+    visibility: hidden;
+}
+.card:hover > .card-sub-title {
+    visibility: visible;
+    z-index: 1;
 }
