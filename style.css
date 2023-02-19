@@ -108,3 +108,13 @@ nav a{
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
 }
+.a-dwonload {
+    text-decoration: none;
+}
+.card-sub-title {
+    border: white 2px solid;
+    background-color: blue;
+    color: orange;
+    border-radius: 30px;
+    padding: 10px;
+}
