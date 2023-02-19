@@ -99,10 +99,15 @@ nav a{
     color: white;
 }
 .card img {
+
     width: 17.5rem;
     border-radius: 9%;
 }
 .card img:hover{
+    transform:scaleZ(1.4) scaleX() scaleY();
+
     filter:blur(4px);
+}
+.a-dwonload:hover {
 
 }
