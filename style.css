@@ -25,6 +25,19 @@
     color: rgb(0, 255, 255);
 
 }
+.media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.media-img {
+    width: 2vw;
+}
+.media-a {
+    margin-bottom: 7px;
+}
 .search input:hover {
     width: 30vw;
 }
