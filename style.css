@@ -20,6 +20,7 @@
     margin-bottom: -35px;
 }
 .header .header-top hgroup {
+
     margin-left: 1vw;
     color: rgb(0, 255, 255);
 
@@ -34,24 +35,7 @@
     width: 20vw;
     transition: width 0.5s;
 }
-header .all-media{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    left: 100%;
-    padding: 0px;
-}
-.img-media{
-    margin:5px;
-}
-.text-media{
-    display: flex;
-    flex-direction: column;
-    
-    margin-bottom: 40px;
-    color: aliceblue;
-}
+
 .search {
     display: flex;
     flex-direction: row;
@@ -65,8 +49,8 @@ header .all-media{
     width: 130px;
 }
 .pageTitle{
-    margin: 0px;
 
+    margin: 0px;
     color: rgb(151, 148, 148);
     font-size: 70px;
     font-family: AA-TYPO;
