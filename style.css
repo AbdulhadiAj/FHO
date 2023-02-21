@@ -174,15 +174,14 @@ nav a{
 
 }
 .card:hover >.card-sub-title {
-    position: absolute;
     border: white 2px solid;
     color: rgb(255, 255, 255);
     border-radius: 30px;
     padding: 10px;
-    visibility: hidden;
+    position: relative;
+    margin-bottom: 200px;
     visibility: visible;
     z-index: 1;
-    padding: 10px;
     box-shadow: 3px 3px 20px 2px rgb(255, 255, 255);
 }
 
