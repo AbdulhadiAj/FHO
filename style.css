@@ -1,4 +1,7 @@
 
+@import
+url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 ::selection{
     background-color: rgb(0, 0, 0);
     color: black;
@@ -53,6 +56,7 @@
     border: hidden;
 }
 .search input {
+    outline: none;
     border-radius: 10px;
     border: hidden;
     background-color: rgb(255, 255, 255);
@@ -60,16 +64,8 @@
     transition: width 0.5s;
 }
 .search input:hover {
-
+    outline: none;
     width: 30vw;
-}
-.search-input:focus{
-        border-radius: 10px;
-        border: hidden;
-        background-color: rgb(255, 255, 255);
-        width: 20vw; 
-
-
 }
 .search {
     display: flex;
@@ -78,7 +74,6 @@
     align-items: center;
     margin-right: 90px;
 }
-
 .logo {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.356);
@@ -127,11 +122,13 @@ nav a{
         background-size: cover;
         background-image: url(imgs/360_F_409035824_ufvz5fwVxad2kMzlJOaQ0MadLP4PPM19.jpg);
         border: 1px solid rgb(247, 0, 0);
-        gap: 15px;
+        gap: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+
 }
 .card{
+
     box-shadow: 1px 1px 9px 1px rgb(248, 0, 0);
     border: 2px solid rgb(255, 0, 0);
     background-color: rgba(0, 0, 0, 0.822);
@@ -143,6 +140,7 @@ nav a{
     padding-top: 10px;
     align-items: center;
     height: 400px;
+
 }
 .card-body h5{
     word-wrap: break-word;
@@ -223,10 +221,27 @@ nav a{
     align-items: flex-start;
     margin-left: 10px;
 }
+.media-text:nth-child(3){
+    
+    color: rgb(0, 174, 255);
+    animation: moving 5s 1 linear;
+}
+.media-text:nth-child(2) {
+
+    color: rgb(255, 255, 255);
+    animation: moving 5s 1 linear;
+}
+.media-text.media-text:nth-child(1) {
+    color: rgb(255, 0, 0);
+    animation: moving 2s 1 linear;
+}
 .media-img {
-    width: 2.4vw;
+width: 2.4vw;
 }
 .media-a {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
     margin-bottom: 0px;
     text-decoration: none;
     display: flex;
@@ -234,33 +249,19 @@ nav a{
     justify-content: flex-start;
     align-items: center;
 }
-.media-text {
-    color: white;
-    animation: moving 5s 1 linear;
-}
-@keyframes moving{
-    0% {
-        transform: translateY(-50px);
-        opacity: 0;
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+
+
+
+span{
+    width: 70px;
+    animation: reveal 2s 1 linear;
+  }  
+  @keyframes reveal {
+      0% {
+        opacity:1;width: 0px;
     }
-    20% {
-        transform: translateY(0);
-        opacity: 1;
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    }
-    80% {
-         transform: translateY(0);
-         opacity: 1;
-        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    }
-    100% {
-         transform: translateY(50px);
-         opacity: 0;
-        -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
-        clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
-}
+    60%{
+        opacty:1; width:100px;
+      }
+
 }
