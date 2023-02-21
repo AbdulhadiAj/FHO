@@ -42,10 +42,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    animation: moving 4s 1 linear;
 }
 .media-text {
     color: white;
+    animation: moving 4s 1 linear;
 }
 .search input:hover {
     width: 30vw;
@@ -204,9 +204,10 @@ nav a{
 }
 @keyframes moving{
     from{
-
+        visibility: hidden;
     }
     to{
-
+        visibility: visible;
+        margin-left: 3vw;
     }
 }
