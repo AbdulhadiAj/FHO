@@ -33,10 +33,10 @@
     margin-left: 10px;
 }
 .media-img {
-    width: 2vw;
+    width: 2.4vw;
 }
 .media-a {
-    margin-bottom: 7px;
+    margin-bottom: 0px;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -69,7 +69,7 @@
     background-color: rgba(255, 255, 255, 0.356);
     width: 130px;
 }
-.pageTitle{
+.page-title{
 
     margin: 0px;
     color: rgb(151, 148, 148);
@@ -183,4 +183,13 @@ nav a{
     z-index: 1;
     padding: 10px;
     box-shadow: 3px 3px 20px 2px rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 480px) {
+    .page-title {
+        font-size: 30px;
+    }
+    .media-img {
+        width: 5vw;
+    }
 }
