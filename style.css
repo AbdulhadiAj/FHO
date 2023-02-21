@@ -147,8 +147,8 @@ nav a{
     color: white;
 }
 .card-img-top {
-    width: 17vw;
-    height: 20vw;
+    width: 270px;
+    height: 300px;
     border-radius: 9%;
     transition: transform .3s ease-in-out;
     margin-top: 0px;
