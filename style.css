@@ -42,9 +42,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    animation: moving 4s 1 linear;
+    animation: moving 4s 1 linear
 }
 .media-text {
+
     color: white;
 }
 .search input:hover {
