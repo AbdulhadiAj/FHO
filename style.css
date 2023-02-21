@@ -1,3 +1,8 @@
+
+::selection{
+    background-color: rgb(0, 0, 0);
+    color: black;
+}
 .header {
     background-image: url();
     background-size:contain;
@@ -49,9 +54,7 @@
     color: white;
     animation: moving 4s 1 linear;
 }
-.search input:hover {
-    width: 30vw;
-}
+
 .search {
     border: hidden;
 }
@@ -62,7 +65,18 @@
     width: 20vw;
     transition: width 0.5s;
 }
+.search input:hover {
 
+    width: 30vw;
+}
+.search-input:focus{
+        border-radius: 10px;
+        border: hidden;
+        background-color: rgb(255, 255, 255);
+        width: 20vw; 
+
+
+}
 .search {
     display: flex;
     flex-direction: row;
@@ -70,6 +84,7 @@
     align-items: center;
     margin-right: 90px;
 }
+
 .logo {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.356);
@@ -207,12 +222,12 @@ nav a{
     }
 }
 @keyframes moving{
-    0%{
+    0%{ 
+        color: rgba(255, 255, 255, 0);
+        filter: brightness(100%);
 
-        visibility: hidden;
     }
-    100%{
-        visibility: visible;
-        margin-left: 3vw;
+    100%{color: white;
+        filter: brightness(110%);
     }
 }
