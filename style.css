@@ -42,11 +42,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+<<<<<<< HEAD
     animation: moving 4s 1 linear
+=======
+>>>>>>> 30ab10501cff9159a56c1278dc6fb14eb4baba5d
 }
 .media-text {
 
     color: white;
+    animation: moving 4s 1 linear;
 }
 .search input:hover {
     width: 30vw;
@@ -116,7 +120,6 @@ nav a{
         background-attachment: fixed;
         background-size: cover;
         background-image: url(imgs/360_F_409035824_ufvz5fwVxad2kMzlJOaQ0MadLP4PPM19.jpg);
-        margin: px;
         border: 1px solid rgb(247, 0, 0);
         gap: 15px;
         display: grid;
@@ -127,12 +130,12 @@ nav a{
     border: 2px solid rgb(255, 0, 0);
     background-color: rgba(0, 0, 0, 0.822);
     border-radius: 10%;
-    display:flex;
     overflow: hidden;
+    display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 10px;
     align-items: center;
-    position: relative;
     height: 400px;
 }
 .card-body h5{
@@ -143,10 +146,9 @@ nav a{
     font-size: 20px;
     color: white;
 }
-
-
 .card-img-top {
-    width: 17.5rem;
+    width: 17vw;
+    height: 20vw;
     border-radius: 9%;
     transition: transform .3s ease-in-out;
     margin-top: 0px;
@@ -207,9 +209,10 @@ nav a{
 }
 @keyframes moving{
     from{
-
+        visibility: hidden;
     }
     to{
-
+        visibility: visible;
+        margin-left: 3vw;
     }
 }
