@@ -19,14 +19,18 @@
     margin-top: -10px;
     margin-bottom: -35px;
 }
-.header .header-top hgroup {
 
+.header .header-top hgroup {
     margin-left: 1vw;
     color: rgb(0, 255, 255);
 
 }
+
 .search input:hover {
     width: 30vw;
+}
+.search {
+    border: hidden;
 }
 .search input {
     border-radius: 10px;
