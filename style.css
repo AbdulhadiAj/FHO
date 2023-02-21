@@ -42,8 +42,10 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    animation: moving 4s 1 linear
 }
 .media-text {
+
     color: white;
     animation: moving 4s 1 linear;
 }
@@ -174,14 +176,17 @@ nav a{
 
 }
 .card:hover >.card-sub-title {
-    border: white 2px solid;
-    color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -250px;
+    border: rgb(0, 0, 0) 2px solid;
+    color: rgba(255, 255, 255, 0);
     border-radius: 30px;
     padding: 10px;
-    position: relative;
-    margin-bottom: 200px;
-    visibility: visible;
+    visibility: hidden;
     z-index: 1;
+    border: white 2px solid;
+    color: rgb(255, 255, 255);
+    visibility: visible;
     box-shadow: 3px 3px 20px 2px rgb(255, 255, 255);
 }
 
@@ -202,10 +207,11 @@ nav a{
     }
 }
 @keyframes moving{
-    from{
+    0%{
+
         visibility: hidden;
     }
-    to{
+    100%{
         visibility: visible;
         margin-left: 3vw;
     }
