@@ -60,9 +60,6 @@ url('https://fonts.googleapis.com/css?family=Roboto:300');
     width: 30vw;
 }
 .search {
-    position:absolute;
-    left: 400px;
-    top: 160px;
     display: flex;
     flex-direction: row;
     justify-content:center;
