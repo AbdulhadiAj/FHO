@@ -244,19 +244,25 @@ a span .media-text1{
     color: rgb(247, 0, 255);
     width: 60px;
     animation: c1 1s 1 linear;
+    filter: brightness(100%);
   } 
   a span .media-text2{
     font-family:Brush Script MT;
     color: white;
     width: 60px;
     animation: c2 1s 1 linear;
+    filter: brightness(100%);
   } 
   a span .media-text3{
     font-family:Brush Script MT;
     color: rgb(255, 0, 0);
     width: 60px;
     animation: c3 1s 1 linear;
-  } 
+    filter: brightness(100%);
+  }
+/* .media-text1 ,.media-text2, .media-text3:hover{
+    filter: brightness(100%);
+  } */
 
   @keyframes c3 {
       0% {
