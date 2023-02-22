@@ -1,6 +1,5 @@
 function search() {
     let searchbar = document.querySelector(".input-search").value.toUpperCase();
-    let cardlist = document.querySelector(".card-list");
     let list = document.querySelectorAll(".a-dwonload");
     let gamename = document.getElementsByTagName('h5');
 
@@ -13,6 +12,7 @@ function search() {
             list[i].style.display = "none";
         }
     }
+
 
 
 }
