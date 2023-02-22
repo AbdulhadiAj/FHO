@@ -310,11 +310,11 @@ a span .media-text1{
   }
   20%{
       color: rgb(255, 255, 255);
-      opacty:1; width:5px;
+      opacty:1; width:0px;
     }
     30%{
       color: rgb(255, 0, 0);
-      opacty:1; width:10px;
+      opacty:1; width:0px;
     }
     50%{
         opacity: 0.5;width: 30px;
