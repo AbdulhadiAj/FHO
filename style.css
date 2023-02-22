@@ -50,8 +50,8 @@
     margin-right: 0.8vw;
 }
 .media-img[alt="youtube icon"] {
-    width: 4.5vw;
-    margin-left: 0.2vw;
+    width: 6vw;
+    margin-left: -0.8vw;
 }
 .search {
     border: hidden;
@@ -231,7 +231,6 @@ nav a{
     
 }
 .media {
-    background-color: aliceblue;
     height:10vw;
     width: 15vw;
     display: flex;
