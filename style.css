@@ -260,9 +260,10 @@ a span .media-text1{
     animation: c3 1s 1 linear;
     filter: brightness(100%);
   }
-/* .media-text1 ,.media-text2, .media-text3:hover{
+.media-text1:hover ,.media-text2:hover, .media-text3:hover{
+    color: aqua;
     filter: brightness(100%);
-  } */
+  } 
 
   @keyframes c3 {
       0% {
