@@ -240,20 +240,23 @@ width:2.4vw;
 }
 
 a span .media-text1{
+    filter: brightness(90%);
     font-family:Brush Script MT;
     color: rgb(247, 0, 255);
     width: 60px;
     animation: c1 1s 1 linear;
-
+    box-shadow: 0 0 1px 1px red;
   } 
   a span .media-text2{
+    filter: brightness(90%);
     font-family:Brush Script MT;
     color: white;
     width: 60px;
     animation: c2 1s 1 linear;
-
+    box-shadow: 0 0 1px 1px red;
   } 
   a span .media-text3{
+    filter: brightness(90%);
     font-family:Brush Script MT;
     color: rgb(255, 0, 0);
     width: 60px;
@@ -261,7 +264,6 @@ a span .media-text1{
     box-shadow: 0 0 1px 1px red;
   }
 .media-text1:hover ,.media-text2:hover, .media-text3:hover{
-    color: aqua;
     filter: brightness(100%);
   } 
 
