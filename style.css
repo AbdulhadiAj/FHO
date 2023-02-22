@@ -40,6 +40,12 @@
 .media-img {
     width: 2.4vw;
 }
+.media-img[alt="tik tok icon"] {
+    width: 3.5vw;
+}
+.media-img[alt="youtube icon"] {
+    width: 4.5vw;
+}
 .search {
     border: hidden;
 }
@@ -224,9 +230,6 @@ nav a{
     align-items: flex-start;
     margin-left: 10px;
 }
-div a .media-img:nth-child(1) {
-width:2.4vw;
-}
 .media-a {
     display:inline-block;
     overflow:hidden;
@@ -246,6 +249,7 @@ a span .media-text1{
     margin-right: 10px;
     animation: c1 1s 1 linear;
     box-shadow: 0 0 1px 1px red;
+    font-size: 2vw;
   } 
   a span .media-text2{
     filter: brightness(90%);
@@ -254,6 +258,7 @@ a span .media-text1{
     margin-right: 10px;
     animation: c2 1s 1 linear;
     box-shadow: 0 0 1px 1px red;
+    font-size: 2vw;
   } 
   a span .media-text3{
     filter: brightness(90%);
@@ -262,6 +267,7 @@ a span .media-text1{
     margin-right: 10px;
     animation: c3 1s 1 linear;
     box-shadow: 0 0 1px 1px red;
+    font-size: 2vw;
   }
 .media-text1:hover ,.media-text2:hover, .media-text3:hover{
     filter: brightness(100%);
