@@ -60,6 +60,9 @@ url('https://fonts.googleapis.com/css?family=Roboto:300');
     width: 30vw;
 }
 .search {
+    position:absolute;
+    left: 400px;
+    top: 160px;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -115,10 +118,9 @@ nav a{
         background-size: cover;
         background-image: url(imgs/360_F_409035824_ufvz5fwVxad2kMzlJOaQ0MadLP4PPM19.jpg);
         border: 1px solid rgb(247, 0, 0);
-        gap: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-
+        gap: 20px;
+        grid-template-columns:1fr 1fr 1fr;
 }
 .card{
 
@@ -136,6 +138,7 @@ nav a{
 
 }
 .card-body h5{
+    font-family:Franklin Gothic Medium;
     word-wrap: break-word;
     padding-left:20px;
     margin-top: -46px;
@@ -230,16 +233,19 @@ width:2.4vw;
 }
 
 a span .media-text1{
+    font-family:Brush Script MT;
     color: rgb(247, 0, 255);
     width: 60px;
     animation: c1 1s 1 linear;
   } 
   a span .media-text2{
+    font-family:Brush Script MT;
     color: white;
     width: 60px;
     animation: c2 1s 1 linear;
   } 
   a span .media-text3{
+    font-family:Brush Script MT;
     color: rgb(255, 0, 0);
     width: 60px;
     animation: c3 1s 1 linear;
@@ -325,3 +331,7 @@ a span .media-text1{
 
     }
 }
+.noItemsText {
+    display: none;
+  }
+  
