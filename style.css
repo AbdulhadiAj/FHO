@@ -33,7 +33,7 @@
 .media {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
     margin-left: 10px;
 }
@@ -154,7 +154,7 @@ nav a{
     justify-content: space-between;
     padding-top: 10px;
     align-items: center;
-    height: 400px;
+    height: 28vw;
 
 }
 .card-body h5{
