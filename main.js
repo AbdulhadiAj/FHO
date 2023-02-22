@@ -1,8 +1,8 @@
  function search() {
-     let searchbar = document.querySelector(".input-search").Value.toUpperCase();
+     let searchbar = document.querySelector(".input-search").value.toUpperCase();
      let cardlist = document.querySelector(".card-list");
-     let list = document.querySelectorAll(".card");
-     let gamename = document.getElementsByTagName(".card-body");
+     let list = document.querySelectorAll(".a-dwonload");
+     let gamename = document.getElementsByTagName('h5');
 
 
      for (let i = 0;i < gamename.length;i++){
