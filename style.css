@@ -255,7 +255,6 @@ a span .media-text1{
     color: rgb(247, 0, 255);
     margin-right: 10px;
     animation: c1 1s 1 linear;
-    box-shadow: 0 0 1px 1px red;
     font-size: 2vw;
   } 
   a span .media-text2{
@@ -264,7 +263,7 @@ a span .media-text1{
     color: white;
     margin-right: 10px;
     animation: c2 1s 1 linear;
-    box-shadow: 0 0 1px 1px red;
+
     font-size: 2vw;
   } 
   a span .media-text3{
@@ -273,13 +272,22 @@ a span .media-text1{
     color: rgb(255, 0, 0);
     margin-right: 10px;
     animation: c3 1s 1 linear;
-    box-shadow: 0 0 1px 1px red;
+
     font-size: 2vw;
   }
 .media-text1:hover ,.media-text2:hover, .media-text3:hover{
     filter: brightness(100%);
   } 
+  .media-text1:hover{    
+    text-shadow: 0px 0px 5px rgb(212, 0, 255);
 
+  }
+  .media-text2:hover{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  }
+  .media-text3:hover{
+    text-shadow: 0px 0px 5px rgb(255, 0, 0);
+  }
   @keyframes c3 {
       0% {
         color: rgb(212, 0, 255);
