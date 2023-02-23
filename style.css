@@ -226,22 +226,15 @@ nav a{
     box-shadow: 0vw 0vw 3vw 0.5vw rgb(255, 255, 255);
 }
 
-/* @media screen and (max-width: 480px) {
-    .page-title {
-        font-size: 30px;
-    }
-    .media-img {
-        width: 5vw;
+@media screen and (max-width: 480px) {
+    .media {
+        margin-top: -6vw;
     }
     .logo {
-        width: 20vw;
+        margin-bottom: 4vw;
     }
-    .p_nav {
-        padding-right: 1.8vw;
-        margin: 10px 0vw;
-        font-size: 10px;
     }
-    */
+
 
 .media {
     height:10vw;
