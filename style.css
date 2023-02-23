@@ -232,6 +232,10 @@ nav a{
     }
     .logo {
         margin-bottom: 4vw;
+        margin-right: -10vw;
+    }
+    .page-title {
+        font-size: larger;
     }
     }
 
