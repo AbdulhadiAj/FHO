@@ -3,7 +3,6 @@
     color: black;
 }
 .header {
-    width: 100vw;
     background-image: url();
     background-size:contain;
     background-position:right;
@@ -110,7 +109,6 @@
     color: aliceblue;
 }
 nav{
-    width: 100vw;
     background-image: url(https://cdn.bleacherreport.net/images/team_logos/328x328/gaming.png);
     background-repeat: no-repeat;
     background-size:50px;
@@ -140,8 +138,6 @@ nav a{
 }
 .container{
     padding: 0;
-    width: 100vw;
-    height: 20vw;
     padding-top: 1vw;
     padding-left: 1vw;
     padding-bottom: 6vw;
