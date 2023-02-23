@@ -58,7 +58,7 @@
 }
 .search input {
     outline: none;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: hidden;
     background-color: rgb(255, 255, 255);
     width: 28vw;
@@ -111,7 +111,7 @@
 nav{
     background-image: url(https://cdn.bleacherreport.net/images/team_logos/328x328/gaming.png);
     background-repeat: no-repeat;
-    background-size:50px;
+    background-size:3vw;
     background-position-x: right;
     background-position-y: center;
     background-color: rgb(39, 39, 39);
