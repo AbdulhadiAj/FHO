@@ -91,7 +91,7 @@
 
 }
 100%{
-    width: 8vw;
+
     transform: rotate(360deg);
 }
 }
@@ -228,7 +228,9 @@ nav a{
 
 @media screen and (max-width: 480px) {
     nav{
-        width: 96.6vw;
+        background-size: 6vw;
+        background-position: 98% 50%;
+        width: 100vw;
         height: 5vw;
         text-align: center;
         justify-content: vw;
@@ -237,28 +239,46 @@ nav a{
         font-size: 1.7vw;
 
     }
+    .card-img-top{
+        width: 25vw;
+        height: 25vw;
+    }
     body{
         width: 100vw;
     }
     .card{
-        height: 26vw;
-        width: 20vw;
+        height: 38vw;
+        width: 28vw;
 
     }
     body h5{
         margin-right: 2vw;
     }
     .card:hover > .card-img-top{
-        width: 17vw ;
-        height: 20vw;
+        width: 25vw ;
+        height: 29vw;
+    }
+    .card:hover >.card-sub-title{
+        margin-top: -28vw;
     }
     .media {
         margin-top: -6vw;
     }
+    .media-a{
+        margin-top: -2vw;
+        margin-right: 0vw;
+    }
+    .media-text1, .media-text2{
+        transform: scale(1.4);
+    }
+    .media-text3{
+        transform: scale(1.4);
+    }
 
     .logo {
+        width: 11vw;
         margin-bottom: 4vw;
-        margin-right: -5vw;
+        margin-right: -8vw;
     }
     .page-title {
         padding-bottom: 5vw;
@@ -281,7 +301,6 @@ nav a{
 }
 .media-a {
     display:inline-block;
-    overflow:hidden;
     white-space:nowrap;
     margin-bottom: 0px;
     text-decoration: none;
