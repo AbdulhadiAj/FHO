@@ -63,6 +63,7 @@
     border: hidden;
     background-color: rgb(255, 255, 255);
     width: 28vw;
+    height: 1.5vw;
     transition: width 0.5s;
 }
 .search input:hover {
