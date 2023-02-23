@@ -65,6 +65,7 @@
     width: 28vw;
     height: 1.5vw;
     transition: width 0.5s;
+    font-size: 1vw;
 }
 .search input:hover {
     outline: none;
@@ -125,8 +126,9 @@ nav{
     margin: 0;
     padding-right: 0vw;
     padding-left: 0vw;
-    margin: 10px 40px 10px ;
+    margin: 1vw 1vw 1vw ;
     transition: transform 0.5s;
+    font-size: 1vw;
 }
 .p_nav:hover{
     color: white;
