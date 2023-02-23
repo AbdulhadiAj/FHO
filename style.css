@@ -159,7 +159,7 @@ nav a{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 1vw;
     align-items: center;
     height: 23vw;
     width: 17vw;
@@ -200,25 +200,26 @@ nav a{
     text-decoration: none;
 }
 .card-sub-title {
-    font-size: 1.5vw;
+    margin-top: 2vw;
     transition: 0.3 ease-in-out;
     border: rgb(0, 0, 0) 2px solid;
     color: rgba(255, 255, 255, 0);
-    padding: 0.7vw;
+    padding:1vw;
     visibility: hidden;
 
 }
 .card:hover >.card-sub-title {
+    font-size: 1.3vw;
     position: relative;
-    margin-top: -9vw;
+    margin-top: -18vw;
     border-radius:3vw;
-    padding: 10px;
+    padding: vw;
     visibility: hidden;
     z-index: 1;
-    border: white 2px solid;
+    border: white 0.2vw solid;
     color: rgb(255, 255, 255);
     visibility: visible;
-    box-shadow: 3px 3px 20px 2px rgb(255, 255, 255);
+    box-shadow: 0vw 0vw 3vw 0.5vw rgb(255, 255, 255);
 }
 
 /* @media screen and (max-width: 480px) {
