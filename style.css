@@ -33,7 +33,7 @@
 .media {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-left: 10px;
 }
@@ -54,6 +54,7 @@
     margin-left: -0.8vw;
 }
 .search {
+    margin-bottom: -vw;
     border: hidden;
 }
 .search input {
@@ -61,12 +62,12 @@
     border-radius: 10px;
     border: hidden;
     background-color: rgb(255, 255, 255);
-    width: 20vw;
+    width: 28vw;
     transition: width 0.5s;
 }
 .search input:hover {
     outline: none;
-    width: 30vw;
+    width: 40vw;
 }
 .search {
     display: flex;
@@ -81,7 +82,7 @@
     animation: hover 3s infinite linear;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.356);
-    width: 130px;
+    width: 5vw;
 }
 @keyframes hover{
     0%{transform: rotate(0);
@@ -93,18 +94,20 @@
 }
 }
 .page-title{
-
-    margin: 00px;
+    margin-left: -8vw;
     color: rgb(151, 148, 148);
-    font-size: 70px;
+    font-size: 4vw;
     font-family:AA-TYPO;
     animation: opacity 2s 1 linear;
+    margin-bottom: -7vw;
+    margin-top: -6.5vw;
     
 }
 .bi-bi-search{
     color: aliceblue;
 }
 nav{
+    width: 100vw;
     background-image: url(https://cdn.bleacherreport.net/images/team_logos/328x328/gaming.png);
     background-repeat: no-repeat;
     background-size:50px;
@@ -114,10 +117,13 @@ nav{
     display: flex;
     flex-direction: row;
 }
-.p_nav{
+.p_nav{    
+    width: 8vw;
     color: gray;
-    padding-right: 20px;
-    margin: 10px 20px 10px ;
+    margin: 0;
+    padding-right: 0vw;
+    padding-left: 0vw;
+    margin: 10px 40px 10px ;
     transition: transform 0.5s;
 }
 .p_nav:hover{
@@ -128,7 +134,8 @@ nav a{
     padding: top -10px;
     text-decoration: none;
 }
-.container{
+.container{width: 100vw;
+    height: 20vw;
         padding: 10px;
         background-color: rgb(241, 241, 241);
         background-repeat: no-repeat;
@@ -138,14 +145,14 @@ nav a{
         border: 1px solid rgb(247, 0, 0);
 }
 .card-list {
+    width: 30vw;
     display: grid;
-    gap: 20px;
-    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    grid-template-columns:1fr 1fr;
 }
 .card{
-
-    box-shadow: 1px 1px 9px 1px rgb(248, 0, 0);
-    border: 2px solid rgb(255, 0, 0);
+    box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
+    border: 0.2vw solid rgb(255, 0, 0);
     background-color: rgba(0, 0, 0, 0.822);
     border-radius: 10%;
     overflow: hidden;
@@ -154,21 +161,23 @@ nav a{
     justify-content: space-between;
     padding-top: 10px;
     align-items: center;
-    height: 28vw;
+    height: 23vw;
+    width: 17vw;
 
 }
+
 .card-body h5{
     font-family:Franklin Gothic Medium;
     word-wrap: break-word;
-    padding-left:20px;
+    padding-left:2vw;
     margin-top: -46px;
 
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: white;
 }
 .card-img-top {
-    width: 19vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     border-radius: 9%;
     transition: transform .3s ease-in-out;
     margin-top: 0px;
@@ -177,7 +186,8 @@ nav a{
 .card:hover > .card-img-top{
     filter: contrast(100%) brightness(20%);
     position: relative;
-    width: 18rem;
+    width: 15vw;
+    height: 17vw;
     border-radius: 9%;
     transform: scaley(1.8)scaleX(1.6);
 }
@@ -190,20 +200,18 @@ nav a{
     text-decoration: none;
 }
 .card-sub-title {
+    font-size: 1.5vw;
     transition: 0.3 ease-in-out;
     border: rgb(0, 0, 0) 2px solid;
     color: rgba(255, 255, 255, 0);
-    border-radius: 30px;
-    padding: 10px;
+    padding: 0.7vw;
     visibility: hidden;
 
 }
 .card:hover >.card-sub-title {
     position: relative;
-    margin-top: -250px;
-    border: rgb(0, 0, 0) 2px solid;
-    color: rgba(255, 255, 255, 0);
-    border-radius: 30px;
+    margin-top: -9vw;
+    border-radius:3vw;
     padding: 10px;
     visibility: hidden;
     z-index: 1;
@@ -213,7 +221,7 @@ nav a{
     box-shadow: 3px 3px 20px 2px rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .page-title {
         font-size: 30px;
     }
@@ -228,8 +236,8 @@ nav a{
         margin: 10px 0vw;
         font-size: 10px;
     }
-    
-}
+    */
+
 .media {
     height:10vw;
     width: 15vw;
@@ -308,7 +316,7 @@ a span .media-text1{
         color: rgb(255, 0, 0);
       }
       100%{
-        opacty:1; width:60px;
+        opacty:1; width:10vw;
       }
 
 }
@@ -330,7 +338,7 @@ a span .media-text1{
         color: white;
     }
     100%{
-        opacty:1; width:60px;
+        opacty:1; width:10vw;
       }
 
 }
@@ -352,7 +360,7 @@ a span .media-text1{
     }
     100%{
 
-        opacity:1; width:60px;
+        opacity:1; width:10vw;
       }
 
 }
@@ -370,6 +378,3 @@ a span .media-text1{
 
     }
 }
-.noItemsText {
-    display: none;
-  }
