@@ -156,8 +156,8 @@ nav a{
 .card-list {
     width: 30vw;
     display: grid;
-    gap:20px;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:12px;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 }
 .card{
     box-shadow: 0px 0px 15px 2px rgb(0, 0, 0);
@@ -222,7 +222,6 @@ nav a{
     position: relative;
     margin-top: -18vw;
     border-radius:3vw;
-    padding: vw;
     visibility: hidden;
     z-index: 1;
     border: white 0.2vw solid;
@@ -232,13 +231,22 @@ nav a{
 }
 
 @media screen and (max-width: 480px) {
+    .card-list {
+        width: 30vw;
+        display: grid;
+        gap:20px;
+        grid-template-columns:1fr 1fr 1fr ;
+    }
     nav{
+        z-index: 1;
+        background-color: rgb(0, 0, 0);
+        position: sticky;
+        top: 0vw;
         background-size: 6vw;
         background-position: 98% 50%;
         width: 100vw;
         height: 5vw;
         text-align: center;
-        justify-content: vw;
     }
     .p_nav{
         font-size: 1.7vw;
@@ -304,15 +312,17 @@ nav a{
         margin-left: -0.8vw;
     }
     .media-text1, .media-text2{
+        overflow-x: hidden;
+        width: 10vw;
+        animation: c3 1.5s 1 linear;
         font-family: storybook, sans-serif;
-        font-style: normal;
-        font-weight: 400;
         transform: scale(1.4);
     }
     .media-text3{
+        overflow-x: hidden;
+        width: 10vw;
+        animation: c3 1.5s 1 linear;
         font-family: storybook, sans-serif;
-font-style: normal;
-font-weight: 400;
         transform: scale(1.4);
     }
 
@@ -323,10 +333,11 @@ font-weight: 400;
     }
     .page-title {
         padding-bottom: 5vw;
-        font-size: 5vw;
+        margin-left: 6vw;
+        font-size: 7vw;
     }
     .search{
-        margin-left: 9vw;
+        margin-left: 15vw;
     }
     }
 
@@ -358,7 +369,9 @@ a span .media-text1{
     font-family:cursive;
     color: rgb(247, 0, 255);
     margin-right: 10px;
-    animation: c1 1s 1 linear;
+    overflow-x: hidden;
+    width: 10vw;
+    animation: c3 1.5s 1 linear;
     font-size: 2vw;
   } 
   a span .media-text2{
@@ -368,7 +381,9 @@ a span .media-text1{
     font-family:cursive;
     color: white;
     margin-right: 10px;
-    animation: c2 1s 1 linear;
+    overflow-x: hidden;
+    width: 10vw;
+    animation: c3 1.5s 1 linear;
 
     font-size: 2vw;
   } 
@@ -379,7 +394,9 @@ a span .media-text1{
     font-family: cursive;
     color: rgb(255, 0, 0);
     margin-right: 10px;
-    animation: c3 1s 1 linear;
+    overflow-x: hidden;
+    width: 10vw;
+    animation: c3 1.5s 1 linear;
 
     font-size: 2vw;
   }
@@ -397,68 +414,66 @@ a span .media-text1{
     text-shadow: 0px 0px 5px rgb(255, 0, 0);
   }
   @keyframes c3 {
-      0% {
+      0% {width:0vw;
         color: rgb(212, 0, 255);
-        opacity:1;width: 0px;
+    
     }
-    20%{
+    20%{       
+
         color: rgb(255, 255, 255);
-        opacty:1; width:5px;
+        
       }
-      30%{
+      30%{        
+
         color: rgb(255, 0, 0);
-        opacty:1; width:10px;
+
       }
       50%{
-        opacity: 1;width: 30px;
+
         color: rgb(255, 0, 0);
       }
-      100%{
-        opacty:1; width:10vw;
+      100%{    width: 10vw;
+
+
       }
 
 }
 @keyframes c2 {
-    0% {
+    0% {width:0vw;
       color: rgb(212, 0, 255);
-      opacity:1;width: 0px;
   }
   20%{
       color: rgb(255, 255, 255);
-      opacty:1; width:0px;
+
     }
     30%{
       color: rgb(255, 0, 0);
-      opacty:1; width:0px;
+
     }
     50%{
-        opacity: 0.5;width: 30px;
         color: white;
     }
-    100%{
-        opacty:1; width:10vw;
+    100%{width:10vw;
       }
 
 }
 @keyframes c1 {
-    0% {
+    0% {width:0vw;
       color: rgb(212, 0, 255);
-      opacity:1;width: 0px;
+
   }
   20%{
       color: rgb(255, 255, 255);
-      opacity:1; width:5px;
+
     }
     30%{
       color: rgb(255, 0, 0);
-      opacity:1; width:10px;
+
     }
-    50%{opacity: 0,5;width: 30px;
+    50%{
         color: rgb(247, 0, 255);
     }
-    100%{
-
-        opacity:1; width:10vw;
+    100%{width:10vw;
       }
 
 }
