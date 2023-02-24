@@ -304,9 +304,15 @@ nav a{
         margin-left: -0.8vw;
     }
     .media-text1, .media-text2{
+        font-family: storybook, sans-serif;
+        font-style: normal;
+        font-weight: 400;
         transform: scale(1.4);
     }
     .media-text3{
+        font-family: storybook, sans-serif;
+font-style: normal;
+font-weight: 400;
         transform: scale(1.4);
     }
 
@@ -349,7 +355,7 @@ a span .media-text1{
     margin-top: -1vw;
     margin-bottom: 0vw;
     filter: brightness(90%);
-    font-family:Brush Script MT;
+    font-family:cursive;
     color: rgb(247, 0, 255);
     margin-right: 10px;
     animation: c1 1s 1 linear;
@@ -359,7 +365,7 @@ a span .media-text1{
     margin-top: 0vw;
     margin-bottom: 0vw;
     filter: brightness(90%);
-    font-family:Brush Script MT;
+    font-family:cursive;
     color: white;
     margin-right: 10px;
     animation: c2 1s 1 linear;
@@ -370,7 +376,7 @@ a span .media-text1{
     margin-top: 0vw;
     margin-bottom: 0vw;
     filter: brightness(90%);
-    font-family:Brush Script MT;
+    font-family: cursive;
     color: rgb(255, 0, 0);
     margin-right: 10px;
     animation: c3 1s 1 linear;
