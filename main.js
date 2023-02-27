@@ -16,3 +16,13 @@ function search() {
 
 
 }
+let showmorebtn = document.querySelector('#show-more');
+let currentitem= 12;
+showmorebtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('main div .a-dwonload')];
+    for (var i = currentitem; i < currentitem + 12; i++){
+        boxes[i].style.display = 'inline-block';
+
+    }
+    currentitem += 12;
+}

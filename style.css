@@ -1,5 +1,5 @@
 body{height: 100%;
-
+    margin-right: 0;
     margin-left: 0;
 }
 ::selection{
@@ -342,7 +342,7 @@ nav a{
     .logo {
         width: 11vw;
         margin-bottom: 4vw;
-        margin-right: -8vw;
+        margin-right: -6vw;
     }
     .page-title {
         padding-bottom: 5vw;
@@ -462,4 +462,50 @@ a span .media-text1{
     100%{
         opacity:1;
     }
+}
+#show-more{display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    border: 0.5vw solid white;
+    border-radius: 3vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    cursor: pointer;
+    font-size: 3vw;
+}
+#show-more:hover{display: flex;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    justify-content: center;
+    border: 0.5vw solid white;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 3vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+.a-dwonload{
+    display: none;
+}
+main div .a-dwonload:nth-child(1),
+main div .a-dwonload:nth-child(2),
+main div .a-dwonload:nth-child(3)
+,main div .a-dwonload:nth-child(4)
+,main div .a-dwonload:nth-child(5)
+,main div .a-dwonload:nth-child(6)
+,main div .a-dwonload:nth-child(7),
+main div .a-dwonload:nth-child(8),
+main div .a-dwonload:nth-child(9),
+main div .a-dwonload:nth-child(10),
+main div .a-dwonload:nth-child(11),
+main div .a-dwonload:nth-child(12){
+    display: inline-block;
+
 }
