@@ -6,11 +6,12 @@ function search() {
 
     for (let i = 0; i < gamename.length; i++) {
         if (gamename[i].innerHTML.toUpperCase().indexOf(searchbar) >= 0) {
-            list[i].style.display = "";
+            list[i].style.display = "boxes";
 
         } else {
             list[i].style.display = "none";
         }
+        
     }
 
 
