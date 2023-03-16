@@ -1,4 +1,4 @@
-body{   
+body{ 
     height: 100%;
     margin-right: 0;
     margin-left: 0;
@@ -193,7 +193,9 @@ nav a{
     gap:2vw;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 }
-.card{
+.card{padding-left: 3px;
+  padding-right:3px ;
+  padding-bottom: 10px;
     box-shadow: 0px 0px 15px 2px rgb(150, 150, 150);
     border: 0.2vw solid rgb(134, 134, 134);
     background-color: rgba(53, 53, 53, 0.658);
@@ -203,7 +205,7 @@ nav a{
     flex-direction: column;
     justify-content: space-between;
     padding-top: 1vw;
-    align-items: center;
+    align-items:center;
     height: 23vw;
     width: 17vw;
 
@@ -212,9 +214,7 @@ nav a{
 .card-body h5{
     font-family:Franklin Gothic Medium;
     word-wrap: break-word;
-    padding-left:2vw;
     margin-top: -46px;
-
     font-size: 2vw;
     color: white;
 }
