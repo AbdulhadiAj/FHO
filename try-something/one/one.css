@@ -16,17 +16,17 @@ div::before{
     content: "";
     position: absolute;
     z-index: -1;
-    border: 5px solid #666666;
+    border: 1px solid #666666;
     border-radius: 50%;
     animation: big-small 1s infinite 0.1s ease-in-out ;
 }
 div::after{
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     content: "";
     position: absolute;
     z-index: -1;
-    border: 5px solid #000000;
+    border: 1px solid #000000;
     border-radius: 50%;
     animation: big-small 1s infinite ease-in-out ;
     animation-direction: alternate;
