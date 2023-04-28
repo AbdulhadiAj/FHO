@@ -13,8 +13,8 @@ body{
     font-weight:bold;
     font-size: 100px;
     width: fit-content;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1px #333;
+    color:transparent;
+    -webkit-text-stroke: 2px #333;
     transition: 0.3s;
     position: relative;
 }
