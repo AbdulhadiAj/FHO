@@ -113,7 +113,7 @@ width: 100%;
     width: 100%;
     transition: 0.3s;
 }
-ul{
+.top{
     padding: 0;
     margin: 0;
     position: absolute;
@@ -125,10 +125,10 @@ ul{
     list-style: none;
     z-index: 1;
 }
-.header .links:hover ul{
+.header .links:hover .top{
     display: block;
 }
-.header .links ul::before{
+.header .links .top::before{
     content: "";
     border-width: 10px;
     border-style: solid;
@@ -138,17 +138,17 @@ ul{
     right: 5px;
 
 }
-.header .links ul li a{
+.header .links .top li a{
     display: block;
     padding: 15px;
     text-decoration: none;
     color: black;
     transition: 0.3s;
 }
-.header .links ul li a:hover{
+.header .links .top li a:hover{
     padding-left: 25px; ;
 }
-.header .links ul li:not(:last-child) a{
+.header .links .top li:not(:last-child) a{
     border-bottom:2px solid #a3a3a3d0;
 }
 /* end header */
@@ -409,13 +409,30 @@ margin: 0;
     letter-spacing: -1.5px;
     margin-bottom: 15px;
 }
-.contact .info a{
+.contact .info .link{
     display: block;
     font-size: 40px;
     margin-bottom: 15px;
     color: var(--main-color);
     font-weight: 800;
     text-decoration: none;
+}
+.contact .info .i{
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left:20px ;
+    color: var(--main-color);
+    text-decoration: none;
+
+}
+.contact .info .i:first-child{
+    color: red;
+}
+.contact .info .i:nth-child(2){
+   color: rgb(0, 119, 255);
+}
+.contact .info .i:last-child{
+    color: rgb(0, 183, 255); 
 }
 .contact .info .socail{
     display: flex;
@@ -424,10 +441,9 @@ margin: 0;
     font-size: 16px;
 
 }
-.contact .info .socail i{
+.contact .container .info .socail .i{
     margin-left: 10px;
     color: var(--secondery-color);
-
 }
 @media(max-width:767px){
     .contact .info .label,
@@ -438,6 +454,7 @@ margin: 0;
 }
 /* end contact */
 /* start footer  */
+
 .footer{
     background-color: var(--secondery-color);
     color: white;

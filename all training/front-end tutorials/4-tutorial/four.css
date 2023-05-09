@@ -65,8 +65,8 @@
 .text::after{
     content: "";
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    right: -0.5px;
+    bottom: -5.5px;
     border-width: 3px;
     border-color:rgb(0, 117, 163)  transparent  transparent  rgb(0, 117, 163);
     border-style: solid;
