@@ -140,7 +140,7 @@ header nav ul li a{
     position: relative;
     z-index: 2;
 }
-header nav ul li a:active,
+header nav ul li .Active,
 header nav ul li a:hover{
 color: var(--main-color);
 border-bottom: 2px solid var(--main-color);
@@ -196,6 +196,14 @@ header nav .form i{
 .landing .text .content{
     max-width: 500px;
 }
+@media(max-width:767px){
+    .landing .text{
+        width: 100%;
+    }
+    .landing .text .content{
+        width:100% ;
+    }
+}
 .landing .text h2{
 font-size: 32px;
 font-weight: normal;
@@ -205,5 +213,45 @@ margin-bottom:20px ;
 .landing .text p{
     font-size: 14px;
 line-height: 2;
+}@media (max-width:767px){
+    .landing .chang-background{
+        display: none;
+    }
 }
+.landing .chang-background{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    color: white;
+    
+}
+.landing .fa-angle-left{
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+}
+.landing .fa-angle-right{
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+.landing .bullet{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+.bullet li {
+border: 1px solid white;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+margin-right: 20px;
+}
+.bullet  .active{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
 /* end landing */
