@@ -1,0 +1,22 @@
+header{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+img{
+    width: 250px;
+    border-radius: 50%;
+}
+section{
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 400px;
+}
+section a{
+    align-items: flex-end;
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 30px;
+}
