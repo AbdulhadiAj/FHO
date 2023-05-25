@@ -1,0 +1,38 @@
+@media (max-width:480px){
+}
+@media (min-width:765px){
+
+}
+@media (min-width:1200px){
+}
+
+
+header .container{
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.358);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    align-items: center;
+}
+header .container a{
+    margin-right: 30px;
+    text-decoration: none;
+    padding-bottom: 33px;
+    color: gray;
+    font-size: 20px;   
+     transition: 0.3s;
+}
+header div a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+header div img{
+width: 50px;
+border-radius:50% ;
+cursor: pointer;
+}
