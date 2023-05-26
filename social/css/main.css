@@ -35,21 +35,39 @@ section .container .instagram{
     transition: 0.3s;
 }
 section .container  .instagram .text-ins{
-    color: rgb(255, 0, 217);
+    color: rgb(238, 0, 255);
     font-family: Arial, Helvetica, sans-serif;
-    margin-left:10px ;
+    margin-left:10px ;text-shadow: 2px 2px 2px  black;
+}
+.container{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.instagram{
+    border-radius: 4px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram:hover{
+    background-image: url(https://img.freepik.com/premium-photo/3d-rendering-bunch-instagram-square-badges-colorful-background_284880-347.jpg?w=360);
+    background-size: cover;
 }
 .fa-instagram{
     font-size: 45px;
+    height: 40px;
+    margin-top: -3px;
     margin-bottom: var(--space-margin-bottom);
     border-radius: 16px;
-    background-position-y:-4px ;
-    background-image: linear-gradient(rgb(252, 252, 252), rgb(255, 255, 255), rgb(124, 0, 128));
+    background-color: white;
+    box-shadow: 1px 1px 50px 50px white;
 }
 .instagram:hover .ins{
     display: flex;
     align-items: center;
-    width: 140px;
+    width: 150px;
 
 }
 /* ins finsh */
@@ -67,6 +85,7 @@ section .container  .youtube .text-you{
     color: red;
     font-family: Arial, Helvetica, sans-serif;
     margin-left:10px ;
+    margin-left:10px ;text-shadow: 2px 2px 2px  black;
 }
 .fa-youtube{
     font-size: 45px;
@@ -74,29 +93,42 @@ section .container  .youtube .text-you{
     
 }
 .youtube:hover .you{
-    width: 130px;
+    width: 150px;
 }
 /* youtube finsh */
-section .container .discord{
+section .container .facebook{
     display: flex;
 }
-.dis{
+.face{
     width: 0px;
     overflow-x: hidden;
     transition: 0.3s;
 }
-section .container  .discord .text-dis{
+section .container  .facebook .text-face{
     color: rgb(0, 140, 255);
     font-family: Arial, Helvetica, sans-serif;
     margin-left:10px ;
+    margin-left:10px ;text-shadow: 2px 2px 2px  black;
 }
-.fa-discord{
+.fa-facebook{
     font-size: 45px;
-    margin-bottom: var(--space-margin-bottom);   
-    
+    background-color: white;
+    margin-bottom: var(--space-margin-bottom);
+    box-shadow: 1px 1px 40px 60px white;
 }
-.discord:hover .dis{
-    width: 130px;
+.facebook{
+    border-radius: 4px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook:hover{
+    background-image: url(https://img.freepik.com/premium-photo/3d-rendering-lot-facebook-square-badges-blue_284880-256.jpg);
+    background-size: cover;
+}
+.facebook:hover .face{
+    width: 150px
 }
 /* discord finsh */
 section .container .tiktok{
@@ -111,10 +143,18 @@ section .container  .tiktok .text-tik{
     color: rgb(0, 0, 0);
     margin-left:var(--space-margin-bottom) ;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left:10px ;text-shadow: 2px 2px 2px  black;
 }
 .fa-tiktok{
     font-size: 45px;
     margin-bottom: 10px;
+}
+.tiktok{
+    display: flex;
+    align-items: center;
+}
+.tiktok:hover{
+
 }
 .tiktok:hover .tik{
     width: 130px;
