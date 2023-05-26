@@ -20,3 +20,10 @@ section a{
     margin-top: 10px;
     font-size: 30px;
 }
+.fa-facebook{
+
+}
+.fa-instagram{
+    border-radius: 6px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(124, 0, 128));
+}
