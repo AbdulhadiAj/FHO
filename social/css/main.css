@@ -1,3 +1,6 @@
+:root{
+    --space-margin-bottom:10px;
+}
 header{
     display: flex;
 justify-content: center;
@@ -11,19 +14,108 @@ section{
     display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
 height: 400px;
+position: relative;
 }
-section a{
+section .container  a{
     align-items: flex-end;
     display: flex;
     text-decoration: none;
-    margin-top: 10px;
     font-size: 30px;
 }
-.fa-facebook{
-
+section .container .instagram{
+    display: flex;
+}
+.ins{
+    display: flex;
+    align-items: center;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+section .container  .instagram .text-ins{
+    color: rgb(255, 0, 217);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:10px ;
 }
 .fa-instagram{
-    border-radius: 6px;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(124, 0, 128));
+    font-size: 45px;
+    margin-bottom: var(--space-margin-bottom);
+    border-radius: 16px;
+    background-position-y:-4px ;
+    background-image: linear-gradient(rgb(252, 252, 252), rgb(255, 255, 255), rgb(124, 0, 128));
+}
+.instagram:hover .ins{
+    display: flex;
+    align-items: center;
+    width: 140px;
+
+}
+/* ins finsh */
+section .container .youtube{
+    display: flex;
+}
+.you{
+    display: flex;
+    align-items: center;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+section .container  .youtube .text-you{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:10px ;
+}
+.fa-youtube{
+    font-size: 45px;
+    margin-bottom: var(--space-margin-bottom);
+    
+}
+.youtube:hover .you{
+    width: 130px;
+}
+/* youtube finsh */
+section .container .discord{
+    display: flex;
+}
+.dis{
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+section .container  .discord .text-dis{
+    color: rgb(0, 140, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:10px ;
+}
+.fa-discord{
+    font-size: 45px;
+    margin-bottom: var(--space-margin-bottom);   
+    
+}
+.discord:hover .dis{
+    width: 130px;
+}
+/* discord finsh */
+section .container .tiktok{
+    display: flex;
+}
+.tik{
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+section .container  .tiktok .text-tik{
+    color: rgb(0, 0, 0);
+    margin-left:var(--space-margin-bottom) ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa-tiktok{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.tiktok:hover .tik{
+    width: 130px;
 }
