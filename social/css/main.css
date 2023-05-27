@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 800px;
     background-image: url(https://t3.ftcdn.net/jpg/03/89/32/80/360_F_389328016_ak3iUrk15slWfEZdYL96O6eKTUyImDeC.jpg);
     background-size: cover;
 
@@ -28,14 +29,18 @@ img {
     border-radius: 9px;
     width: 500px;
     position: relative;
-    top: 200px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 800px;
+    margin-top:100px ;
 }
 
 section {
-
+    position: absolute;
+    height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     height: 400px;
@@ -67,12 +72,7 @@ section .container a {
     margin-left: 40px;
 }
 
-.text-ins {
-    color: rgb(238, 0, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10px;
-    text-shadow: 2px 2px 2px black;
-}
+
 
 .container {
     width: 300px;
@@ -84,8 +84,6 @@ section .container a {
 .youtube,
 .tiktok,
 .facebook {
-    margin-bottom: -10px;
-    margin-top: 10px;
     border-radius: 4px;
     overflow-y: hidden;
     display: flex;
@@ -105,14 +103,13 @@ section .container a {
 .fa-tiktok,
 .fa-facebook {
     font-size: var(--sizeicon-font-size);
-    margin-bottom: var(--space-margin-bottom);
-    margin-top: 10px;
     padding-left: 20px;
 }
 
 .instagram:hover .fa-instagram,.youtube:hover .fa-youtube,.tiktok:hover .fa-tiktok,.facebook:hover .fa-facebook {
     background-color: white;
-    box-shadow: 1px 1px 50px 50px white;
+    margin: auto;
+    box-shadow: 10px 10px 50px 50px white;
 }
 
 .instagram:hover .ins,
@@ -125,7 +122,7 @@ section .container a {
 }
 .text-you {
     color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Anton', sans-serif;
     margin-left: 10px;
     text-shadow: 2px 2px 2px black;
 }
@@ -135,7 +132,7 @@ section .container a {
 }
 .text-face {
     color: rgb(0, 140, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Anton', sans-serif;
     margin-left: 10px;
     text-shadow: 2px 2px 2px black;
 }
@@ -148,11 +145,16 @@ section .container a {
 .text-tik {
     color: rgb(0, 0, 0);
     margin-left: var(--space-margin-bottom);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Anton', sans-serif;
     margin-left: 10px;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
-
+.text-ins {
+    color: rgb(238, 0, 255);
+    font-family: 'Anton', sans-serif;
+    margin-left: 10px;
+    text-shadow: 2px 2px 2px black;
+}
 .tiktok:hover {
     background-image: url(https://as1.ftcdn.net/v2/jpg/04/63/91/20/500_F_463912062_M1Dp4Ekkz6eNTxiaajLe8H7ZmyxuvPTV.jpg);
     background-size: cover;
@@ -163,6 +165,7 @@ section .container a {
         background-color: rgba(0, 0, 0, 0.342);
         border-radius: 9px;
         width: 350px;
+        height: 700px;
         position: relative;
         margin-top: -100px;
     }
@@ -170,6 +173,6 @@ section .container a {
 .youtube,
 .tiktok,
 .facebook {
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 }
