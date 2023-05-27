@@ -62,7 +62,7 @@ section .container a {
     align-items: center;
     width: 0px;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .instagram:hover .ins,
@@ -84,10 +84,12 @@ section .container a {
 .youtube,
 .tiktok,
 .facebook {
+    width: 150px;
     border-radius: 4px;
     overflow-y: hidden;
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
 .instagram:hover,
@@ -96,6 +98,7 @@ section .container a {
 .facebook:hover {
     background-image: url(https://img.freepik.com/premium-photo/3d-rendering-bunch-instagram-square-badges-colorful-background_284880-347.jpg?w=360);
     background-size: cover;
+    width: 300px;
 }
 
 .fa-instagram,
