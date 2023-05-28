@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 800px;
+    height: 660px;
     background-image: url(https://t3.ftcdn.net/jpg/03/89/32/80/360_F_389328016_ak3iUrk15slWfEZdYL96O6eKTUyImDeC.jpg);
     background-size: cover;
 
@@ -18,7 +18,7 @@ header {
 
 img {
     padding-top: 20px;
-    width: 250px;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -32,8 +32,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 800px;
-    margin-top:100px ;
+    height: 650px;
+    margin-top:30px ;
 }
 
 section {
@@ -90,6 +90,7 @@ section .container a {
     display: flex;
     align-items: center;
     transition: 0.3s;
+    padding-left: 40px;
 }
 
 .instagram:hover,
@@ -112,7 +113,7 @@ section .container a {
 .instagram:hover .fa-instagram,.youtube:hover .fa-youtube,.tiktok:hover .fa-tiktok,.facebook:hover .fa-facebook {
     background-color: white;
     margin: auto;
-    box-shadow: 10px 10px 50px 50px white;
+    box-shadow: 10px 10px 50px 90px white;
 }
 
 .instagram:hover .ins,
@@ -170,12 +171,13 @@ section .container a {
         width: 350px;
         height: 700px;
         position: relative;
-        margin-top: -100px;
+        margin-top: 0px;
     }
     .instagram,
 .youtube,
 .tiktok,
 .facebook {
+    padding-left:40px ;
     margin-bottom: 10px;
 }
 }
