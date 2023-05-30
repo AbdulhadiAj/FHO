@@ -59,13 +59,14 @@ section {
 section .container a {
 
     text-decoration: none;
-    font-size: 30px;
+
 }
 
 .ins,
 .tik,
 .face,
-.you {
+.you {    
+
     width: 0px;
     overflow-x: hidden;
 }
@@ -92,7 +93,7 @@ section .container a {
     width: 250px;
     border-radius: 4px;
     overflow-y: hidden;
-
+    height: 80px;
     margin-left: 0px;
     display: flex;
     justify-content: flex-start;
@@ -115,6 +116,7 @@ section .container a {
 .fa-youtube,
 .fa-tiktok,
 .fa-facebook {
+
     font-size: var(--sizeicon-font-size);
     padding: 5px;
 }
@@ -138,6 +140,7 @@ section .container a {
 }
 
 .text-you {
+    font-size: 30px;
     color: red;
     font-family: 'Anton', sans-serif;
     margin-left: 10px;
@@ -150,6 +153,7 @@ section .container a {
 }
 
 .text-face {
+    font-size: 30px;
     color: rgb(0, 140, 255);
     font-family: 'Anton', sans-serif;
     margin-left: 10px;
@@ -161,7 +165,8 @@ section .container a {
     background-size: cover;
 }
 
-.text-tik {
+.text-tik {    
+    font-size: 30px;
     color: rgb(0, 0, 0);
     margin-left: var(--space-margin-bottom);
     font-family: 'Anton', sans-serif;
@@ -170,6 +175,7 @@ section .container a {
 }
 
 .text-ins {
+    font-size: 30px;
     color: rgb(238, 0, 255);
     font-family: 'Anton', sans-serif;
     margin-left: 10px;
@@ -189,7 +195,7 @@ section .container a {
         width: 350px;
         height: 700px;
         position: relative;
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
     .instagram,
@@ -201,6 +207,9 @@ section .container a {
 
     .logo {
         margin-left: 55px;
+    }
+    .instagram:hover::before{
+        background-position-x: -350px;
     }
 }
 
@@ -219,7 +228,8 @@ section .container a {
     position: absolute;
     z-index: -1;
     background-size: cover;
-    transition: 0.5s;
+    transition: 0.5s  ;
+    
 }
 
 .tiktok:before {
@@ -242,7 +252,7 @@ section .container a {
     opacity: 1;
     display: block;
     background-image: url(https://w0.peakpx.com/wallpaper/691/499/HD-wallpaper-instagram-purple-logo-purple-brickwall-instagram-logo-brands-instagram-neon-logo-instagram.jpg);
-    background-position: -400px;
+    background-position: -370px;
     width: 600px;
     height: 850px;
     position: absolute;
