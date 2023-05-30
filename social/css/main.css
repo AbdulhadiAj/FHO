@@ -96,7 +96,7 @@ section .container a {
     margin-left: 0px;
     display: flex;
     justify-content: flex-start;
-        transition: 0.3s ;
+    transition: 0.3s;
 }
 
 .instagram:hover,
@@ -218,18 +218,22 @@ section .container a {
     height: 850px;
     position: absolute;
     z-index: -1;
-    background-size: cover;    
+    background-size: cover;
     transition: 0.5s;
 }
-.tiktok:before{
+
+.tiktok:before {
     margin-top: -440px;
 }
+
 .facebook::before {
     margin-top: -220px;
 }
-.youtube::before{
+
+.youtube::before {
     margin-top: -620px;
 }
+
 .instagram:hover::before,
 .tiktok:hover::before,
 .youtube:hover::before,
@@ -263,5 +267,6 @@ section .container a {
 
 .facebook:hover::before {
     margin-top: -220px;
+
     background-image: url(https://w0.peakpx.com/wallpaper/636/634/HD-wallpaper-facebook-blue-logo-blue-brickwall-facebook-logo-social-networks-facebook-neon-logo-facebook.jpg);
 }
