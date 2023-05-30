@@ -4,26 +4,26 @@
 }
 
 body {
-    height: 800px;
+    height: 660px;
     background-image: url(https://t3.ftcdn.net/jpg/03/89/32/80/360_F_389328016_ak3iUrk15slWfEZdYL96O6eKTUyImDeC.jpg);
     background-size: cover;
 
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 img {
-    padding-top: 20px;
-    width: 250px;
+    margin-left:110px;
+    margin-top:20px ;
+    width: 200px;
+    
+    border: 10px solid rgb(11, 9, 9);
+    border-inline: 10px solid red;
     border-radius: 50%;
 }
 
 /* finsh header */
 .all {
+    width: 450px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.342);
     border-radius: 9px;
@@ -54,9 +54,8 @@ section {
 
 }
 
-section .container a {
-    align-items: flex-end;
-    display: flex;
+section .container a{
+
     text-decoration: none;
     font-size: 30px;
 }
@@ -65,8 +64,6 @@ section .container a {
 .tik,
 .face,
 .you {
-    display: flex;
-    align-items: center;
     width: 0px;
     overflow-x: hidden;
     transition: 0.1s;
@@ -76,36 +73,38 @@ section .container a {
 .facebook:hover .face,
 .tiktok:hover .tik,
 .youtube:hover .you {
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
 
 
 .container {
-    width: 300px;
-    display: flex;
-    justify-content: center;
+    width: 100px;
+    margin: auto;    
 }
 
 .instagram,
 .youtube,
 .tiktok,
 .facebook {
-    width: 150px;
+    width: 250px;
     border-radius: 4px;
     overflow-y: hidden;
-    display: flex;
-    align-items: center;
     transition: 0.3s;
+    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .instagram:hover,
 .youtube:hover,
 .tiktok:hover,
-.facebook:hover {
-    background-image: url(https://img.freepik.com/premium-photo/3d-rendering-bunch-instagram-square-badges-colorful-background_284880-347.jpg?w=360);
+.facebook:hover {background-image: url(https://img.freepik.com/premium-photo/3d-rendering-bunch-instagram-square-badges-colorful-background_284880-347.jpg?w=360);
     background-size: cover;
     width: 300px;
+    padding-left: 0px;
+    margin-left: -90px;
+    align-items: center;
 }
 
 .fa-instagram,
@@ -113,13 +112,13 @@ section .container a {
 .fa-tiktok,
 .fa-facebook {
     font-size: var(--sizeicon-font-size);
-    padding-left: 20px;
+    padding: 5px;
 }
 
 .instagram:hover .fa-instagram,.youtube:hover .fa-youtube,.tiktok:hover .fa-tiktok,.facebook:hover .fa-facebook {
     background-color: white;
     margin: auto;
-    box-shadow: 10px 10px 50px 50px white;
+    box-shadow: 10px 10px 50px 90px white;
 }
 
 .instagram:hover .ins,
