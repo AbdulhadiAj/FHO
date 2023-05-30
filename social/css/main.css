@@ -211,6 +211,15 @@ section .container a {
     .instagram:hover::before{
         background-position-x: -350px;
     }
+    .all::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: url(https://img.freepik.com/free-vector/colorful-background-with-social-media-logos_69286-224.jpg?w=2000);
+        z-index: -2;
+    }
 }
 
 
