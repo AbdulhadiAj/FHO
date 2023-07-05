@@ -55,6 +55,7 @@ div .links{
     background-color: rgb(0, 153, 255);
     border-radius: 30px;
     margin: 0 6px 0;
+    font-family: sans-serif;
     text-decoration: none;
 }
 .interaction {
