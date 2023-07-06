@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hadikbb-profile</title>
+    <link rel="icon" href="img/hadikabbani_logo_cartoon_character_beautiful4k_have_color_red_b_d97df318-54a8-4a4e-b36b-84391f8d630f.png">
 
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -13,7 +14,7 @@
     
 </head>
 
-<body>
+<body onload="get()">
     <div class="container">
         <div class="content">
             <div class="image">
@@ -36,21 +37,22 @@
             </div>
 
             <div class="interaction">
-                <div class="like">
+                <div class="like" onclick="save()">
                     <i class="fa-solid fa-heart"></i>
-                    <div class="text">12.4K</div>
+                    <div class="text-like">0</div>
                 </div>
                 <div class="comment">
                     <i class="fa-solid fa-comment" ></i>
-                    <div class="text">12.4K</div>
+                    <div class="text-comment">0</div>
                 </div>
                 <div class="share" >
                     <i class="fa-solid fa-share"></i>
-                    <div class="text">12.4K</div>
+                    <div class="text-share">0</div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

@@ -83,9 +83,7 @@ div div div{
 .comment:hover .fa-comment{
     color: rgb(156, 156, 156);
 }
-.like:hover .fa-heart{
-color: red;
-}
+
 .share:hover .fa-share{
     color: rgb(0, 225, 255);
 }
