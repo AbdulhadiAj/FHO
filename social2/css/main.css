@@ -181,3 +181,40 @@ button{display: none;
     transform: scale(1);
     
 }
+.tiktok{
+    width: 30px;
+    height: 30px;
+background-color: rgb(255, 255, 255);
+    overflow: hidden;
+margin: 0;
+    position: relative;
+
+}
+.tiktok1{
+    font-size: 18px;
+    z-index: 1;
+    left: 6%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 26%;
+    color: rgba(0, 255, 255, 0.575);
+    position: absolute;
+
+}
+.tiktok2{
+    font-size: 18px;
+    z-index: 1;
+    left: 14%;
+    transform: translateX(-50%)translateY(-50%);
+    top: 34%;
+    color: rgb(255, 0, 0);
+    position: absolute;
+}
+.tiktok3{
+    font-size: 18px;
+    z-index: 1;
+    left: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 30%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
