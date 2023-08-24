@@ -60,7 +60,7 @@
     /* the text from right to left  */
     direction: rtl;
     /* the text from left to right  */
-    direction: lrt;
+    direction: ltr;
     /* to make another object in the same line  */
     vertical-align: middle;
     /* decorate the text  */
