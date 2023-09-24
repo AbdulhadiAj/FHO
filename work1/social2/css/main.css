@@ -63,6 +63,8 @@ div .links {
     margin: 0 6px 0;
     font-family: sans-serif;
     text-decoration: none;
+    padding-left:10px ;
+    padding-right: 10px;
 }
 
 .interaction {

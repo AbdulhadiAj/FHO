@@ -1,0 +1,260 @@
+/* start variables */
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+}
+
+/* end variables */
+/* start global rules */
+* {
+  color: #666666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (min-width: 1201px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 750px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+.top,
+.right,
+.nav,
+.right {
+  display: flex;
+}
+header {
+  width: 100%;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.top {
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.right {
+  align-items: center;
+}
+.right .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+.right .fa-search {
+  margin-left: 20px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border-left: 1px solid #666666;
+}
+.nav {
+  margin-right: 20px;
+}
+.nav li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+.nav li a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.nav li a {
+  border-bottom: 1px solid #2c2c2c;
+  padding: 15px;
+  margin-left: 0;
+}
+.nav li:first-child a {
+  text-decoration: none;
+  color: #19c8fa;
+  border-bottom: 2px solid #19c8fa;
+}
+.top {
+  position: relative;
+}
+header {
+  position: relative;
+}
+.top:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  z-index: -1;
+  height: 2px;
+  background-color: #666666;
+  display: block;
+}
+.icon {
+  display: flex;
+}
+header {
+  z-index: 3;
+  position: absolute;
+}
+.landing {
+  min-height: 100vh;
+  background-image: url(/templete2/img/space-station-60615_1280.jpg);
+  left: 0;
+  background-size: cover;
+}
+.landing .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  background-color: #19c9fa81;
+  width: 50%;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.landing .text h1,
+.landing .text p {
+  width: 70%;
+  color: white;
+  padding-right: 20px;
+}
+.landing .text h1 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.landing .text p {
+  font-size: 15px;
+}
+.landing .fa-arrow-alt-circle-left,
+.landing .fa-arrow-alt-circle-right {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 57vh;
+}
+.landing .fa-arrow-alt-circle-left {
+  left: 0;
+  margin-left: 15px;
+}
+.landing .fa-arrow-alt-circle-right {
+  right: 0;
+  margin-right: 15px;
+}
+.service{
+
+}
+.object{
+    display: flex;
+}
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+  .right .fa-bars {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .right .fa-bars:hover + .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 90px;
+    background-color: rgba(0, 0, 0, 0.336);
+  }
+
+  .nav li {
+    border-bottom: 1px solid #2c2c2c;
+    padding: 15px;
+    margin-left: 0;
+  }
+  .nav li a {
+    color: white;
+    margin: 0;
+    border: none;
+  }
+  .nav li:first-child a {
+    color: #19c8fa;
+    margin: 0;
+    border: none;
+  }
+
+  .nav li:first-child {
+    color: #19c8fa;
+    margin: 0;
+    border-bottom: 2px solid #19c8fa;
+  }
+  .landing .fa-arrow-alt-circle-left,
+  .landing .fa-arrow-alt-circle-right {
+    display: none;
+  }
+  .landing .text h1,
+  .landing .text p {
+    width: 100%;
+    color: white;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .landing .text h1 {
+    font-size: 30px;
+  }
+  .landing .text p {
+    font-size: 20px;
+  }
+
+  .landing .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    background-color: #19c8fa;
+    width: 100%;
+  }
+}
