@@ -55,10 +55,12 @@
     margin: 0;
     border-bottom: 2px solid #19c8fa;
   }
-  .landing .overlay{
+
+  .landing .overlay {
     width: 100%;
     text-align: center;
   }
+
   .service-skills {
     display: grid;
     grid-template-columns: 1fr;
@@ -81,9 +83,11 @@
     font-size: 40px;
     margin-right: 20px;
   }
-  .container-static .container{
+
+  .container-static .container {
     width: 100%;
   }
+
   .object .text h1,
   .object .text p,
   .object .text {
@@ -159,10 +163,12 @@
     transition: .3s;
 
   }
-  .about .container .image img{
+
+  .about .container .image img {
     width: 550px;
     bottom: -125px;
   }
+
   .box .caption h4,
   .box .caption p {
     margin: 0;
@@ -194,13 +200,15 @@
     overflow: hidden;
 
   }
+
   .statistic .number {
     font-size: 35px;
   }
- 
-  .statistic{
+
+  .statistic {
     margin: 0;
   }
+
   .container-test .points {
     display: flex;
     position: absolute;
@@ -210,6 +218,7 @@
     bottom: 0px;
     z-index: 2;
   }
+
   .skills-level {
     display: flex;
     position: relative;
@@ -220,27 +229,32 @@
     padding-bottom: 30px;
 
   }
-  .testimonials,
-.our-skills {
-  position: relative;
-  text-align: center;
-  width: 90%;
-  margin: auto;
-}
-.box-test {
-  margin-bottom:20px ;
-}
 
-  .email .container p{
+  .testimonials,
+  .our-skills {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .box-test {
+    margin-bottom: 20px;
+  }
+
+  .email .container p {
     width: 100%;
     text-align: center;
   }
-  .email .container{
+
+  .email .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  }.email-container{
+  }
+
+  .email-container {
     display: flex;
     border: 1px solid #666666;
     width: 70%;
@@ -248,6 +262,7 @@
     align-items: center;
     padding-left: 5px;
   }
+
 }
 
 @media (max-width:480px) {
@@ -298,36 +313,110 @@
     overflow: hidden;
 
   }
-  .about .container .image{
-width: 100%;
+
+  .about .container .image {
+    width: 100%;
   }
-  .about .container .image img{
+
+  .about .container .image img {
     width: 450px;
-    bottom:-100px;
+    bottom: -100px;
   }
+
   .video .text p,
   .video .text h2,
   .video .text button {
     font-size: 10px;
   }
+
   .video .text button {
     padding: 5px 10px;
   }
-  .video .text{
-    padding-top:5% ;
-    padding-bottom:5% 
+
+  .video .text {
+    padding-top: 5%;
+    padding-bottom: 5%
   }
-  .app li:last-child{
+
+  .app li:last-child {
     padding: 10px;
-    
+
   }
-  .container-static .container{
+
+  .container-static .container {
     width: 100%;
   }
+
   .statistic .number {
     font-size: 20px;
   }
+
   .statistic {
     margin: 0;
+  }
+
+  .bottom-contact,
+  .top-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-contact .input-top,
+  .top-contact .input-top input {
+    width: 100%;
+  }
+
+  .bottom-contact,
+  .top-contact {
+    padding: 0 10px;
+  }
+
+  .bottom-contact .text,
+  .top-contact .text {
+    align-items: center;
+  }
+
+  .bottom-contact .text h3,
+  .top-contact .text h3 {
+    margin: 10px 0;
+
+  }
+  .bottom-contact .text .number h4 span,
+  .top-contact .text .number h4 span{
+    margin: 0 10px;
+  }
+  .bottom-contact,
+  .top-contact,
+  .top-contact .input-top,
+  .bottom-contact .input-bottom,
+  .bottom-contact .input-bottom input,
+  .top-contact .input-top input,
+  .bottom-contact .text,
+  .top-contact .text,
+  .bottom-contact .text .number h4,
+  .top-contact .text .number h4 {
+    width: 100%;
+  }
+
+  .top-contact .text,
+  .bottom-contact .text .number h4,
+  .top-contact .text .number h4,
+  .bottom-contact .text {
+    flex-wrap: wrap;
+  }
+
+  .bottom-contact .text,
+  .top-contact .text,
+  .bottom-contact .text .number h4,
+  .top-contact .text .number h4 {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+
+  }
+
+  .bottom-contact .text,
+  .top-contact .text {
+    justify-content: space-between;
   }
 }
