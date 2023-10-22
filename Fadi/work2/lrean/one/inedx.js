@@ -483,12 +483,71 @@
 // let products = ["keyboard", "mouse", "pen", "pad", "monitor"];
 // let i = 0;
 // for (;;) {
-//   console.log(products[i]);  
+//   console.log(products[i]);
 //   i +=1;
+////or =>i++;
 //   if (i === products.length) {
-    
+
 //     break;
-//   } 
+//   }
 
 // }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let products = ["keyboard", "mouse", "pen", "pad", "monitor", "iphone"];
+// let color = ["red", "green", "blue"];
+// let showCount = 5;
+// document.write(`<h1>show${showCount} products</h1>`);
+// for (let i = 0; i < showCount; i++) {
+//   document.write(`<div>`);
+//   document.write(`<h3> [${i + 1}] ${products[i]} </h3>`);
+//   for (let j = 0; j < color.length; j++) {
+//     document.write(`<p>${color[j]} </p>`);
+//     }
+//     document.write(`<p>${color.join(" | ")} </p>`);
+//     document.write(`</div>`);
+// }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let products = ["keyboard", "mouse", "pen", "pad", "monitor", "iphone"];
+// let i = 0;
+// while (i < products.length) {
+//   console.log(products[i]);
+//   i++;
+// }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let products = ["keyboard", "mouse", "pen", "pad", "monitor", "iphone"];
+// let i = 0;
+// do{
+//     console.log(i);
+//     i++;
+// }
+// while (false) {
+
+// }
+// console.log(i);
+//----------------------------------callenge loop--------------------------------------------------------------------------------------------------------------------------------
+// let myAdmins = ["Ahmed", "Osama", "Sayed", "htop", "jamera"];
+// let myEmployees = [
+//   "Amgad","Samah","Ameer","jawaker","jasmai","jassm",
+//   "hala","horse","Omar","Othman","Othman","Othman",
+//   "Othman","ADmin","ADmin","ADmin","ADmin","ADmin",
+//   "Amany","Samia","Samia","Samia","Samia","Samia",
+// ];
+// let sizeAdmins = 5;
+// let sizeMyEmployees = 0;
+
+// document.write(`<div><h3>we have ${sizeAdmins} Admins</h3></div>`);
+// for (let i = 0; i < sizeAdmins; i++) {
+//   document.write(`<div>`);
+//   document.write(`<p>
+//   the Admin for team ${i + 1} is ${myAdmins[i]}</p>
+//   <h2>member team: </h2>`);
+
+//   for (let j = 0; j < myEmployees.length; j++) {
+//     if (myAdmins[i].charAt(0) == myEmployees[j].charAt(0)) {
+//       document.write(`<p>${sizeMyEmployees++ + 1} - ${myEmployees[j]}</p>`);
+//     }
+//   }
+//   sizeMyEmployees = 0;
+//   document.write(`<hr>`);
+//   document.write(`</div>`);
+// }
