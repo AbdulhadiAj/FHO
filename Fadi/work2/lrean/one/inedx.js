@@ -367,8 +367,8 @@
 // let a = ["Ahmed", "sayed", "Ali", "Osama", "Gamal", "Ameer"];
 // console.log(a);
 // //slice create new array
-// console.log(a.slice());
-// console.log(a.slice(1));
+// console.log(a.());
+// console.log(a.slice(slice1));
 // console.log(a.slice(1, 3));
 // console.log(a.slice(-3));
 // console.log(a.slice(1, -2));
@@ -551,3 +551,439 @@
 //   document.write(`<hr>`);
 //   document.write(`</div>`);
 // }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// //basic example
+// function hello(userName) {
+//   console.log(`hello ${userName}`);
+// }
+// let a = `Osama`;
+// hello(a);
+// hello(`Ahmed`);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// function hello(userName, age) {
+//   if (age < 20) {
+//     console.log(`app is not stuitable for you`);
+//   } else console.log(`hello ${userName} your age is ${age}`);
+// }
+// let a = `gaza`,
+//   x = 40;
+// hello(a, x);
+// hello("Osama", 20);
+// hello("Ahmed", 30);
+// hello("gasm", 10);
+// //other example
+// function geneateYear(start, end, exclude) {
+//   for (let i = start; i <= end; i++) {
+
+//     if (i == exclude) {
+//       continue;
+//     }console.log(i);
+//   }
+// }
+// geneateYear(1982, 2021, 2020);
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// function generate(start, end, exclude) {
+//   for (let i = start; i <= end; i++) {
+//     if (i == 15) {
+//       return `interruptting`;
+//     }
+//     console.log(i);
+//   }
+// }
+// console.log(generate(1, 20));
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// function sayHello(userName="unkown",/*(default value)this if you dont have age*/ age="unknown") {
+// //or this same out put
+//     age=age||"unknow"
+// //or this same out put
+//   if (age === undefined) {
+//     age = "unknow";
+//   }
+//   return `hello ${userName} your age is ${age}`;
+// }
+// console.log(sayHello("Osama"));
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// function calc(
+//   ...numbers /*"..." that mean you dont know how much var and this is array*/
+// ) {
+//   let result = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     result += numbers[i];
+//   }
+//   return `this is sum of number is ${result}`;
+// }
+// console.log(calc(50, 30, 10, 10));
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// function showInfo(us = "un", ag = "un", rt = 0, show = "yes", ...sk ) {
+//   document.write(`<div>`);
+//   document.write(`<ph2>welcome ${us}</h2>`);
+//   document.write(`<p>age: ${ag}</p>`);
+//   document.write(`<p>hour rate is $${rt}</p>`);
+//   if (show === "yes") {
+//     if (sk.length > 0) {
+//       document.write(`<p>skils is ${sk.join(" | ")}</p>`);
+//     } else {
+//       document.write(`<p>no skills</p>`);
+//     }
+//   } else {
+//     if (sk.length > 0) {
+//       document.write(`<p>skills are hidden</p>`);
+//     } else {
+//       document.write(`<p>no skills and hidden</p>`);
+//     }
+//   }
+//   document.write(`</div>`);
+// }
+// showInfo("ahmed", 20, 30, "yes","html","css" );
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//-------------------------------------------------------------
+// function showDetails(a, b, c) {
+//   let name, age, status;
+//   if (typeof a === "string") {
+//     name = a;
+//   } else if (typeof a === "number") {
+//     age = a;
+//   } else {
+//     if (a == true) {
+//       status = `availabe`;
+//     } else {
+//       status = `not availabe`;
+//     }
+//   }
+//   if (typeof b === "string") {
+//     name = b;
+//   } else if (typeof b === "number") {
+//     age = b;
+//   } else {
+//     if (b == true) {
+//       status = `availabe`;
+//     } else {
+//       status = `not availabe`;
+//     }
+//   }
+//   if (typeof c === "string") {
+//     name = c;
+//   } else if (typeof c === "number") {
+//     age = c;
+//   } else {
+//     if (c == true) {
+//       status = `availabe`;
+//     } else {
+//       status = `not availabe`;
+//     }
+//   }
+//   typeof a === "string"
+//     ? (name = a)
+//     : typeof a === "number"
+//     ? (age = a)
+//     : typeof a == true
+//     ? (status = `available`)
+//     : (status = `not availabe`);
+//   typeof b === "string"
+//     ? (name = b)
+//     : typeof b === "number"
+//     ? (age = b)
+//     : b == true
+//     ? (status = `available`)
+//     : (status = `not availabe`);
+//   typeof c === "string"
+//     ? (name = c)
+//     : typeof c === "number"
+//     ? (age = c)
+//     : c == true
+//     ? (status = `available`)
+//     : (status = `not availabe`);
+//   console.log(`hello ${name} your age is ${age} ${status} `);
+// }
+// showDetails("fadi", 30, true);
+// showDetails(30, false, "fadi");
+// showDetails("fadi", true, 30);
+// showDetails(false, "fadi", 30);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let calculator = function (num1, num2) {
+//   //"anonymous function" this function made for one action
+//   return num1 + num2;
+// };
+// console.log(calculator(10, 20));
+// //example
+// document.getElementById("show").onclick = function () {
+//   console.log("show");
+// };
+// // other example
+// setTimeout(function () {
+//   document.write(`<p>hello fadi</p>`);
+// }, 5000);
+// // other example
+
+// function sayhello() {
+//   console.log("hello osama");
+// }
+// document.getElementById("show").onclick = sayhello;
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// // example 1
+// function saymessage(fname, lname) {
+//   let message = `hello`;
+//   //nest function
+//   function concatmsg() {
+//     message = `${message} ${fname} ${lname}`;
+//   }
+//   concatmsg();
+//   return message;
+// }
+// console.log(saymessage("osama", "ahmed"));
+
+// //example 2
+
+// function saymessage(fname, lname) {
+//   let message = `hello`;
+//   //nest function
+//   function concatmsg() {
+//     return`${message} ${fname} ${lname}`;
+//   }
+//   return concatmsg();
+// }
+// console.log(saymessage("osama", "ahmed"));
+
+// //example 3
+
+// function saymessage(fname, lname) {
+//   let message = `hello`;
+//   //nest function
+//   function concatmsg() {
+//     function getFullName(){
+//         return`${fname} ${lname}`
+
+//     }
+//     return`${message} ${getFullName()}`;
+//   }
+//   return concatmsg();
+// }
+// console.log(saymessage("osama", "ahmed"));
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+// example 1
+// // regular function
+// let print= function() {
+//   return 10;
+// }
+
+// //vs
+
+// // arrow function
+// let print= _ =>10
+// console.log(print());
+
+// example 2
+
+// // regular function
+// let print = function (num) {
+//   return num;
+// };
+// //vs
+// // arrow function
+// print = num => num;
+// console.log(print(100));
+
+// example 3
+
+// // regular function
+// let print = function (num1, num2) {
+//   return num1 + num2;
+// };
+// //vs
+// // arrow function
+// print = (num1, num2) => num1 + num2;
+// console.log(print(100,50));
+
+// example 4
+
+// // regular function
+// let print = function (num1, num2) {
+//   let a = 10;
+//   num1 = a;
+//   return num1 + num2;
+// };
+// //vs
+// // arrow function
+// print = (num1, num2) => {
+//   a = 10;
+//   num1 = a;
+//   return num1 + num2;
+// };
+// console.log(print(100, 50));
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// //global variable
+// let a = 1;
+// var b = 2;
+// function showText() {
+//   //local variable
+//   let a = 10;
+//   var b = 20;
+//   //first for local variable if it isnt found in local it sreach in global
+
+//   console.log(`form local ${a}`);
+//   console.log(`form local ${b}`);
+// }
+// //you cant use local variable out of function
+// console.log(`form global ${a}`);
+// console.log(`form global ${b}`);
+// showText();
+//-----------------------------------------------------------------------------------
+// let x = 10;//global variable
+// if (x == 10) {
+//   let x = 50;// local variable
+//   console.log(x)
+// }
+
+// console.log(x);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// // let name= function(...names){
+// // return console.log(`string [${names.join(],[)}] => done`)
+// // }
+// let Name = (...names) => console.log(`string [${names.join("],[")}] => done`);
+// console.log(Name("fadi", "Osama", "Mohamed", "Ali", "Ibrahim"));
+
+// // let calc = function (one, two, ...nums) {
+// //     return one + two + +nums[+flase];
+// // };
+// let myNumbers = [20, 50, 10, 60];
+// let calc = (one, two, ...nums) => one + two + +nums[myNumbers[1]+myNumbers[2]-myNumbers[3]];
+// console.log(calc(20, 50, 10, 60)); //80
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let myNums = [1, 2, 3, 4, 5, 6];
+// let newArray = [];
+// example 1
+// for (let i = 0; i < myNums.length; i++) {
+//   newArray.push(myNums[i] + myNums[i]);
+// }
+// console.log(newArray);
+
+// higher order function
+// same idea with Map
+
+// example 2
+
+// let addSelf = myNums.map(function (element, index, arr) {
+//   return element + element;
+// }, 10);
+// let addSelf = myNums.map((e) => e + e);
+// console.log(addSelf);
+
+// example 3
+
+// function addition(ele) {
+//   return ele + ele;
+// }
+// let add = myNums.map(addition);
+// console.log(add);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let swappingCases = "elZERo";
+// let invertedNumbers = [1, -10, -20, 15, 100, -30];
+// let ignoreNumbers = "Elz123er4o";
+// //so1
+// let sw = swappingCases.split("").map(function (ele) {
+//   return ele == ele.toUpperCase() ? ele.toLowerCase() : ele.toUpperCase();
+// });
+// //so2
+// console.log(sw.join(""));
+// let inv = invertedNumbers.map(function (ele) {
+//   return -ele;
+// });
+// //so3
+// console.log(inv);
+// let ing = ignoreNumbers.split("").map(function (ele) {
+//   return isNaN(parseInt(ele))? ele :"";
+// });
+// console.log(ing.join(""));
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// //get friends with Name start with A
+// let friends = ["Ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+// let filterfriends = friends.filter(function (ele) {
+//   return ele.startsWith("A");
+// });
+// console.log(filterfriends);
+
+// // get even Number only
+// let number = [11, 20, 2, 5, 17, 10];
+// let evenNumbers = number.filter(function (ele) {
+//   return ele % 2 === 0;
+// });
+// console.log(evenNumbers);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// //filter words more than 4 characters
+// let sentence = "I Love Foood Code Too Playing Much ";
+// let samllWords = sentence.split(" ").filter(function (ele) {
+//   return ele.length <= 4;
+// });
+// console.log(samllWords.join(" "));
+// //ignore numbers
+// let ignoreNumbers = "Elz123er4o";
+// let ign = ignoreNumbers.split("").filter(function (ele) {
+//   return isNaN(parseInt(ele));
+// });
+// console.log(ign.join(""));
+// let mix = "A13B2ZX";
+// let mul = mix
+//   .split("")
+//   .filter(function (ele) {
+//     return parseInt(ele);
+//   })
+//   .map(function (ele) {
+//     return ele*ele;
+//   });
+// console.log(mul.join(""));
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let nums = [10, 20, 15, 30];
+// let add = nums.reduce(function (acc, current, index, arr) {
+//   console.log(`acc: ${acc}`);
+//   console.log(`current ele: ${current}`);
+//   console.log(`current index: ${index}`);
+//   console.log(`arr: ${arr}`);
+//   console.log(acc + current);
+//   return acc + current;
+// }, 5 /*<=start point of reduce*/);
+// console.log(add);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let theBiggest = [
+//   "bla",
+//   "Propaganda",
+//   "other",
+//   "AAA",
+//   "Battery",
+//   "Test",
+//   "Propaganda_two",
+// ];
+// let check = theBiggest.reduce(function (acc, current) {
+//   return acc.length > current.length ? acc : current;
+// });
+// console.log(check);
+// let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "@", "O"];
+// let elzero = removeChars
+//   .filter(function (ele) {
+//     return ele != "@";
+//   })
+//   .reduce(function (acc, current) {
+//     return `${acc}${current}`;
+//   });
+
+// console.log(elzero);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let allLis = document.querySelectorAll("ul li");
+// let allDivs = document.querySelectorAll(".content div");
+
+// allLis.forEach(function (ele) {
+//   ele.onclick = function () {
+//     // for remove class acive
+//     allLis.forEach(function (ele) {
+//       ele.classList.remove("active");
+//     });
+//     // for add class active
+//     this.classList.add("active");
+//     // for delete divs
+//     allDivs.forEach(function (ele) {
+//       ele.style.display = "none";
+//     });
+//   };
+// });
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
