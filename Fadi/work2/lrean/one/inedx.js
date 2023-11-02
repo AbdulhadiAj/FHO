@@ -162,7 +162,7 @@
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 // let a = "elzero web school";
 // console.log(a.length);
-// console.log(a.substring(2, 6)); //same slice
+// console.log(a.substring(17,-true)); //same slice
 // console.log(a.substring(6, 2)); //same slice
 // console.log(a.substring(-10, 6)); //0 -6
 // console.log(a.substring(a.length - 5, a.length - 3));
@@ -986,4 +986,302 @@
 //   };
 // });
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
+// let solution = myString
+//   .split(",")
+//   .filter(function (ele) {
+//     return isNaN(parseInt(ele));
+//   })
+//   .map(function (ele) {
+//     return ele.startsWith("_") ? " " : ele.charAt();
+//   })
+//   .reduce(function (acc, current) {
+//     return `${acc}${current}`;
+//   })
+//   .slice(false, -true);
+// console.log(solution);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let user = {
+//   //properties
+//   theName: "osama",
+//   theAge: 38,
+//   //method
+//   sayHello: function () {
+//     return `hello`;
+//   },
+// };
+// console.log(user.theName);
+// console.log(user.theAge);
+// console.log(user.sayHello());
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let myvar = "country"; //dynamic property name by var
+// let user = {
+//   theName: "Osama",
+//   //this name not valid we can use it by '[""]' to becaome valid and you can use valid name in it too
+//   /*||*/
+//  /*\||/*/
+//   /*\/*/
+//   country: "egypt",
+//   "country of": "egypt",
+//   //or this
+//   100: "egypt",
+// };
+// //doesnt work in other way
+//  /*||*/
+// /*\||/*/
+//  /*\/*/
+// console.log(user.theName); //valid name with dot notation =>work
+// console.log(user.country); //valid name with dot notation =>work
+// console.log(user["theName"]); //valid name with bracket notation =>work
+// console.log(user["country of"]); //not valid name with bracket notation =>work
+// console.log(user["100"]); //not valid name with bracket notation =>work
+// console.log(user[myvar]); //valid name with bracket notation without quotation cause it is var =>work
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let user = {
+//   name: "Osama",
+//   age: 38,
+//   skill: ["html", "css", "js"],
+//   available: true,
+//   adresses: {
+//     ksa: "riyadh",
+//     egypt: {
+//       one: "cairo",
+//       two: "Giza",
+//       three:"skandria"
+//     },
+//   },
+//   checkAv: function () {
+//     if (user.available === true) {
+//       return `free for work`;
+//     } else {
+//       return `not free`;
+//     }
+//   },
+// };
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.skill);
+// console.log(user.skill[2]);
+// console.log(user.skill.join(" | "));
+// //you can write it how you want bracket notation or dot notation
+// console.log(user.adresses.ksa);
+// console.log(user.adresses.egypt.one);
+// console.log(user["adresses"].egypt["two"]);
+// console.log(user["adresses"]["egypt"].three);
+// //for check if it is available
+// console.log(user.checkAv());
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let user =new Object({
+//     age:20,
+// });
+
+// console.log(user);
+
+// user.age = 30;
+
+// user["country"] = "egypt";
+
+// user.sayHello = function () {
+//   return `hello`;
+// };
+
+// console.log(user);
+
+// console.log(user.age);
+
+// console.log(user.country);
+
+// console.log(user.sayHello());
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// console.log(this); //this is same window
+// console.log(this === window); //example give true
+// myVar = 100;
+// console.log(window.myVar);
+// console.log(this.myVar);
+// function sayHello() {
+//   console.log(this);
+//   return this;
+// }
+// sayHello();
+// console.log(sayHello() == window);
+// document.getElementById("c1").onclick = function () {
+//   console.log(this);//for take button you click on it
+// };
+// let user = {
+//   age: 38,
+//   ageInDays: function () {
+//     console.log(this)//return to method
+//     return user.age * 365;
+//   },
+// };
+// console.log(user.age);
+// console.log(user.ageInDays());
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let user = {
+//   age: 40,
+//   doubleAge: function () {
+//     return user.age * 2;
+//   },
+// };
+
+// console.log(user);
+// console.log(user.age);
+// console.log(user.doubleAge());
+
+// let obj = Object.create({});//way to make object
+// obj.age = 100;
+// console.log(obj);
+////or
+// let copyObj = Object.create(user);//make object by using other object
+
+// copyObj.age = 50;
+// console.log(copyObj);
+// console.log(copyObj.age);
+// console.log(copyObj.doubleAge());
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let obj1 = {
+//   prop1: 1,
+//   meth1: function () {
+//     return this.prop1;
+//   },
+// };
+// let obj2 = {
+//   prop2: 2,
+//   meth1: function () {
+//     return this.prop2;
+//   },
+// };
+// let targetObject = {
+//   prop1: 1,
+//   prop3: 3,
+// };
+// //"object.assign it is using to make new object by
+// //use other object or many other object example: "
+// let finalObject = Object.assign(targetObject, obj1, obj2);
+// //and can edit from it
+// finalObject.prop1 = 200;
+// finalObject.prop4 = 20;
+// console.log(finalObject.prop4);
+// console.log(finalObject);
+// // and you can add in object
+// let newObject = Object.assign({}, obj1, { prop5: 50, name: "fadi" });
+// console.log(newObject);
+// console.log(newObject.name);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// // DOM => document Object model
+// let myIdElement = document.getElementById("my-div");//to call from html by ID
+// console.log(myIdElement);
+
+// let myTagElements = document.getElementsByTagName("p");//by tagname like p ,div, button
+// console.log(myTagElements);
+// console.log(myTagElements[1]);
+// console.log(myTagElements[1].innerHTML="test");
+
+// let myClassElements = document.getElementsByClassName("my-span");//by class
+// console.log(myClassElements[0]);
+
+// let myQueryElement = document.querySelector(".my-span");//for all can use it to ID,tag,class but one element
+// console.log(myQueryElement);
+
+// let myQueryElements = document.querySelectorAll(".my-span");//for all can use it ID,tag,class but more elements
+// console.log(myQueryElements);
+// console.log(myQueryElements[1]);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let myElement = document.querySelector(".js");
+// console.log(myElement.innerHTML); //retrun html with text
+// console.log(myElement.textContent); //retrun the text in html
+// //example for innerhtml
+// myElement.innerHTML = "text from <span>main.js <span>file";
+// //example for textcontent
+// myElement.textContent = "text from <span>main.js<span>file";
+// //change attributes with directly in html
+// document.images[0].src = "https://google.com";
+// document.images[0].alt = "alternate";
+// document.images[0].title = "picture";
+// document.images[0].id = "pic";
+// document.images[0].className = "img";
+// //or
+// let mylink = document.querySelector(".link");
+// //change attributes with method
+// console.log(mylink.getAttribute("class"));//to call att
+// console.log(mylink.getAttribute("href"));//to call att
+// mylink.setAttribute("href", "https://twitter.com");//to edit or add to att
+// mylink.setAttribute("title", "twitter");//to edit or add to att
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// console.log(document.getElementsByTagName("p")[0].attributes); //to get all att in element
+
+// let myp = document.getElementsByTagName("p")[0];
+
+// //retrun true or false if you have att or not
+// if (myp.hasAttribute("data-src")) {
+//   console.log("found");
+//   if (myp.getAttribute("data-src") == "") {
+//     myp.removeAttribute("data-src"); //to remove att
+//   } else {
+//     myp.setAttribute("data-src", "new value");
+//   }
+// } else {
+//   console.log("not found");
+// }
+// myDiv = document.getElementsByTagName("div")[0];
+// //retrun true or false if you have atts or not
+// if (myDiv.hasAttributes()) {
+//   console.log(`found`);
+// } else {
+//   console.log(`not found`);
+// }
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let myElement = document.createElement("div"); //to create element
+// let myAttr = document.createAttribute("data-custom"); //to create attr
+// let myText = document.createTextNode("product one"); //to create text our messege in element
+// let myComment = document.createComment("this is div"); //to create comment
+
+// myElement.className = "product"; //attr
+// myElement.setAttributeNode(myAttr); //new way to make attr to ele
+// myElement.setAttribute("data-test", "testing"); //add attr to ele
+// myElement.appendChild(myComment); //to add comment
+// myElement.appendChild(myText); //to add messege
+// document.body.appendChild(myElement); //to call all in page
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let s = document.createElement("div");
+// s.className = "all";
+
+// for (let i = 0; i < 100; i++) {
+//     let myElement = document.createElement("div");
+//     myElement.className = "product";
+//     s.appendChild(myElement);
+//   //-----------
+//   let myTitle = document.createElement("h3");
+//   myElement.appendChild(myTitle);
+//   //-----------
+//   let myTitleM = document.createTextNode(` product title `);
+//   myTitle.appendChild(myTitleM);
+//   //-----------
+//   let span = document.createElement("span");
+//   myTitle.appendChild(span);
+//   //-----------
+//   let spanM = document.createTextNode(` ${1 + i} `);
+//   span.appendChild(spanM);
+//   //-----------
+//   let myText = document.createElement("p");
+//   myElement.appendChild(myText);
+//   //-----------
+//   let myTextP = document.createTextNode("fadi you are so good");
+//   myText.appendChild(myTextP);
+//   //-----------
+//   document.body.appendChild(s);
+// }
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let myElement=document.querySelector("div")
+// console.log(myElement.children)//to get the ele
+// console.log(myElement.children[0])//to choose the ele
+// console.log(myElement.childNodes)//to get all  text 
+// console.log(myElement.childNodes[0])//to choose text
+// console.log(myElement.firstChild)//to get first text
+// console.log(myElement.lastChild)//to get last text
+// console.log(myElement.firstElementChild)//to get first ele 
+// console.log(myElement.lastElementChild)//to get last ele 
+// // let myColor=document.querySelector("p")
+// // myColor.style.color="red"
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
