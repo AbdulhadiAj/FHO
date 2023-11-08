@@ -1276,12 +1276,67 @@
 // let myElement=document.querySelector("div")
 // console.log(myElement.children)//to get the ele
 // console.log(myElement.children[0])//to choose the ele
-// console.log(myElement.childNodes)//to get all  text 
+// console.log(myElement.childNodes)//to get all  text
 // console.log(myElement.childNodes[0])//to choose text
 // console.log(myElement.firstChild)//to get first text
 // console.log(myElement.lastChild)//to get last text
-// console.log(myElement.firstElementChild)//to get first ele 
-// console.log(myElement.lastElementChild)//to get last ele 
+// console.log(myElement.firstElementChild)//to get first ele
+// console.log(myElement.lastElementChild)//to get last ele
 // // let myColor=document.querySelector("p")
 // // myColor.style.color="red"
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// //Event==احداث
+// let myBtn = document.getElementById("btn");
+// myInput=document.getElementById("input")
+// mySubmit=document.getElementById("input1")
+// myBtn.onclick = function () {
+//   //for when click make action
+//   console.log("clicked");
+// };
+// myBtn.oncontextmenu = function () {
+//   //for change or edit to click right menu in chrome
+//   console.log("clicked");
+// };
+// myBtn.onmouseenter = function () {
+//   //when mouse enter without click ele make ation
+//   console.log("enter");
+// };
+// myBtn.onmouseleave = function () {
+//   //when mouse leave without click ele make ation
+//   console.log("leave");
+// };
+// window.onload = function () {
+//   //when make refresh to page make action
+//   console.log("refreshed");
+// };
+// window.onscroll = function () {
+//   //when scroll make action
+//   console.log("scroll");
+// };
+// window.onresize = function () {
+//   //for change media qurey
+//   console.log("long");
+// };
+// myInput.onfocus = function () {
+//   //for when focus in input or option  make action
+//   console.log("focus");
+// };
+// myInput.onblur = function () {
+//   //for when leave focus in input or option  make action
+//   console.log("blur");
+// };
+// mySubmit.onsubmit = function () {
+//   //for when click on submit the info make action
+//   console.log("submit");
+// };
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+mySubmit = document.getElementById("submit");
+
+mySubmit.onclick= function (event) {
+  mySubmit.style.color = "red";
+  event.preventDefault();
+};
+document.links[0].onclick = function (event) {
+  console.log(event);
+  event.preventDefault();
+};
