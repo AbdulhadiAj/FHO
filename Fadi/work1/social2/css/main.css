@@ -63,7 +63,7 @@ div .links {
     margin: 0 6px 0;
     font-family: sans-serif;
     text-decoration: none;
-    padding-left:10px ;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -134,67 +134,78 @@ div div div {
         font-family: sans-serif;
     }
 }
-input{display: none;
-    position: absolute;
-    z-index: 2;
-    width: 250px;
-    left: 2px;
-    height: 0;
-}
-form{
+
+form {
     display: flex;
 }
-.comment:hover input{
-    display: block;
-    border: none;
-    border-radius: 9px;
-    height: 20px;
-    outline: none;
+form,.fa-close{
+    visibility: hidden;
 }
-button{display: none;
+.fa-close{
+    z-index: 3;
+    position: absolute;
+    top: 5px;
+    font-size: 15px;
+    right: 5px;
+}
+.fa-close:hover{
+    color: red;
+}
+.comment .inputmsm {
+    display: block;    
+    position: absolute;    
+    left: 2px;
+    border: none;
+    border-radius: 9px;    
+    outline: none;
+    height: 20px;
+    width: 80%;    
+    z-index: 2;
+}
+
+
+.comment .submit {
     position: absolute;
     z-index: 2;
     width: 40px;
     right: 0px;
     cursor: pointer;
-}
-
-.comment:hover button{
-    display: block;
+    display: flex;
     border: none;
     border-radius: 9px;
     color: rgb(14, 14, 14);
     background-color: white;
     outline: none;
-    height: 20px;
+    height: 22px;
+    justify-content: center;
 }
-.comment::before{
+
+form::before {
     display: block;
     transform: scale(0);
-}
-.comment:hover::before{
     content: "";
     display: block;
     position: absolute;
-    width: 300px;
+    width: 100%;
     height: 356.41px;
     z-index: 1;
-    top:0 ;
+    top: 0;
     left: 0;
     background-color: rgb(233, 238, 238);
     transform: scale(1);
-    
 }
-.tiktok{
+
+.tiktok {
     width: 30px;
     height: 30px;
-background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
-margin: 0;
+    margin: 0;
     position: relative;
 
 }
-.tiktok1{
+
+.tiktok1 {
     font-size: 18px;
     z-index: 1;
     left: 6%;
@@ -204,7 +215,8 @@ margin: 0;
     position: absolute;
 
 }
-.tiktok2{
+
+.tiktok2 {
     font-size: 18px;
     z-index: 1;
     left: 14%;
@@ -213,7 +225,8 @@ margin: 0;
     color: rgb(255, 0, 0);
     position: absolute;
 }
-.tiktok3{
+
+.tiktok3 {
     font-size: 18px;
     z-index: 1;
     left: 10%;

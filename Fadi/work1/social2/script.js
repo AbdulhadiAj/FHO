@@ -22,30 +22,40 @@ share.addEventListener('click', e => {
 
 
 
-var storedItem = localStorage.getItem("storedItem");
-
-function save(){
-    var Item = document.querySelector(".text-like").innerHTML;
-    localStorage.setItem("storedItem", Item);
-    document.querySelector(".text-like").innerHTML = Item;
-}
-
-function get(){
-    localStorage.getItem("storedItem");
-    document.querySelector(".text-like").innerHTML = storedItem;
-
-}
-
 const likeIcon = document.querySelector(".fa-heart")
 let textLike = document.querySelector('.text-like');
 like.addEventListener('click', e => {
-    if(likeIcon.style.color == "red") {
+    if (likeIcon.style.color == "red") {
         likeIcon.style.color = "black";
         textLike.innerHTML--;
-    } 
+    }
     else {
         likeIcon.style.color = "red";
         textLike.innerHTML++;
     }
 
 })
+let myComment = document.querySelector(".comment")
+let x = document.querySelector(".fa-close")
+let myInput = document.querySelector(".inputmsm")
+let mySubmit = document.querySelector(".submit")
+myComment.onclick = function () {
+    document.forms[0].style.visibility = "visible"
+    x.style.visibility = "visible"
+    myInput.focus()
+}
+x.onclick = function () {
+    document.forms[0].style.visibility = "hidden"
+    x.style.visibility = "hidden"
+}
+document.forms[0].onsubmit = function (e) {
+    let uservalid = false
+    if (myInput.value.length>=1) {
+        uservalid = true
+    }
+    console.log(myInput.value.length)
+    console.log(uservalid)
+    if (uservalid == false) {
+        e.preventDefault()
+    }
+}
