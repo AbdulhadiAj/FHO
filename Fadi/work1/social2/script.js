@@ -1,3 +1,6 @@
+
+
+
 const share = document.querySelector(".share")
 const like = document.querySelector(".like")
 share.addEventListener('click', event => {
@@ -22,19 +25,6 @@ share.addEventListener('click', e => {
 
 
 
-const likeIcon = document.querySelector(".fa-heart")
-let textLike = document.querySelector('.text-like');
-like.addEventListener('click', e => {
-    if (likeIcon.style.color == "red") {
-        likeIcon.style.color = "black";
-        textLike.innerHTML--;
-    }
-    else {
-        likeIcon.style.color = "red";
-        textLike.innerHTML++;
-    }
-
-})
 let myComment = document.querySelector(".comment")
 let x = document.querySelector(".fa-close")
 let myInput = document.querySelector(".inputmsm")
@@ -50,7 +40,7 @@ x.onclick = function () {
 }
 document.forms[0].onsubmit = function (e) {
     let uservalid = false
-    if (myInput.value.length>=1) {
+    if (myInput.value.length >= 1) {
         uservalid = true
     }
     console.log(myInput.value.length)
@@ -59,3 +49,19 @@ document.forms[0].onsubmit = function (e) {
         e.preventDefault()
     }
 }
+
+
+const likeIcon = document.querySelector(".fa-heart")
+let textLike = document.querySelector('.text-like');
+like.addEventListener('click', e => {
+    if (likeIcon.style.color == "red") {
+        likeIcon.style.color = "black";
+        textLike.innerHTML--;
+    }
+    else {
+        likeIcon.style.color = "red";
+        textLike.innerHTML++;
+    }
+
+})
+

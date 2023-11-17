@@ -1330,13 +1330,46 @@
 //   console.log("submit");
 // };
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-mySubmit = document.getElementById("submit");
+// mySubmit = document.getElementById("submit");
 
-mySubmit.onclick= function (event) {
-  mySubmit.style.color = "red";
-  event.preventDefault();
-};
-document.links[0].onclick = function (event) {
-  console.log(event);
-  event.preventDefault();
-};
+// mySubmit.onclick= function (event) {
+//   mySubmit.style.color = "red";
+//   event.preventDefault();
+// };
+// document.links[0].onclick = function (event) {
+//   console.log(event);
+//   event.preventDefault();//for onclick dont make submit
+// };
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let mySubmit = document.getElementById("submit");
+// let input1 = document.querySelector(".input1");
+// let input2 = document.querySelector(".input2");
+// onload = function () {//this make action when you do something
+//   input1.focus();//this make action auto (simulation)
+
+//   input1.onblur = function () {//this make action when you do something
+//     input2.focus();//this make action auto (simulation)
+//     input2.onblur = function () {//this make action when you do something
+//       mySubmit.click();//this make action auto (simulation)
+//     };
+//   };
+// };
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let element = document.getElementById("my-div");
+// console.log(element.classList);
+// console.log(element.classList[3]); //for get class by index
+// console.log(element.classList.item(3)); //same above
+// console.log(element.classList.contains("one")); //for check if this class is exist
+
+// //toggle if not found class add it if found class delete it
+// console.log(element.classList.toggle("hello")); //add
+// console.log(element.classList.toggle("hello")); //delete
+// element.onclick = function () {
+//   element.classList.add("me", "she"); //add
+//   element.onclick = function () {
+//     element.classList.remove("test", "one"); //delete
+//   };
+// };
+
+// console.log(element.classList);
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
