@@ -1373,6 +1373,39 @@
 
 // console.log(element.classList);
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let element = document.getElementById("my-div");
+// // element.style.color = "red"; //change or add direct
+// // element.style.backgroundColor = "black"; //second word first latter cap
+// element.style.cssText = `
+// background-color :red;
+// color :red;
+// `; //same css
+// element.style.removeProperty("color"); //make remove from css file or form inline style
+// element.style.setProperty("font-size", "40px"); //add style
+// element.style.setProperty("font-size", "40px", "important"); //can you make it important
+// document.styleSheets[0].rules[0].style.setProperty(
+//   "background-color",
+//   "green",
+//   "important"
+// );// for add to stylesheets
+// document.styleSheets[0].rules[0].style.removeProperty("cursor");//remove form stylesheets
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let element = document.getElementById("my-div");
+// let createdP = document.createElement("p");
+// let createdP1 = document.createElement("p");
+// element.before(createdP); //can put element before other element you choose it
+// element.before("hello from js"); //can put string before other element you choose it
+// element.after("hello from js"); //can put string after other element you choose it
+// element.after(createdP1); //can put element after other element you choose it
+// element.append("hello from js"); //for put the string in side the element and in last it
+// element.append(createdP); //for put the element in side the element and in last it
+// element.prepend("hello from js"); //for put the string in side the element and in first it
+// element.prepend(createdP1); //for put the element in side the element and in first it
+// element.remove();//for delete element 
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // let container = document.createElement("div");
 // container.className = "container";
 // let header = document.createElement("div");
